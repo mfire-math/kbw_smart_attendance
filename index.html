@@ -2,7 +2,7 @@
 <html lang="ko"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>경복 Smart 출석부 v0.8</title>
+    <title>경복 Smart 출석부 v1.1</title>
 
     <!-- ── PWA 메타 태그 ── -->
     <meta name="theme-color" content="#2563eb">
@@ -14,10 +14,10 @@
     <meta name="description" content="경복여자고등학교 교사용 스마트 출석부">
 
     <!-- PWA manifest (인라인 base64) -->
-    <link id="pwa-manifest" rel="manifest" href="blob:null/11dfed9a-8f18-4073-955e-4f7487a2a634">
+    <link id="pwa-manifest" rel="manifest">
 
     <!-- Apple Touch Icon (인라인 SVG → base64) -->
-    <link id="apple-touch-icon" rel="apple-touch-icon" href="data:image/png;base64,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">
+    <link id="apple-touch-icon" rel="apple-touch-icon">
 
     <!-- 스플래시 색상 -->
     <meta name="msapplication-TileColor" content="#2563eb">
@@ -72,6 +72,8 @@
 
         /* ── 학생 영역 ── */
         .student-area { display: none; padding: 10px; background: #f8fafc; border-radius: 8px; margin-bottom: 6px; border: 1px solid var(--border); }
+        /* 종례 나이스 테이블은 높이 제한 없이 전체 표시 */
+        #st-homeroom_PM { overflow: visible; max-height: none; }
 
         /* 출석 체크 바 */
         .roll-call-bar {
@@ -291,6 +293,146 @@
         .stat-summary td:first-child { text-align: left; font-weight: 600; }
         .stat-empty { color: var(--muted); text-align: center; padding: 16px 0; font-size: 0.82rem; }
 
+        /* ── 수업 카드 결석자 이름 표시 ── */
+        .absent-names {
+            font-size: 0.72rem; color: var(--accent); font-weight: 600;
+            margin-top: 3px; line-height: 1.4;
+        }
+
+        /* ══════════════════════════════════════
+           나이스 스타일 종례부 (v0.9)
+        ══════════════════════════════════════ */
+        .neis-table-wrap { overflow-x: auto; overflow-y: visible; margin-top: 6px; width: 100%; }
+        .neis-table {
+            border-collapse: collapse; width: 100%; font-size: 0.72rem;
+            min-width: 500px;
+        }
+        .neis-table th, .neis-table td {
+            border: 1px solid #cbd5e1; padding: 5px 4px;
+            text-align: center; vertical-align: middle;
+        }
+        .neis-table th { background: #f1f5f9; font-weight: 700; color: var(--muted); }
+        .neis-table td.name-cell { font-weight: 600; text-align: left; padding-left: 8px; min-width:64px; }
+        .neis-table td.summary-cell { min-width: 72px; font-size: 0.7rem; }
+
+        /* 빗금 패턴 셀 */
+        .neis-cell { min-width: 42px; cursor: pointer; transition: background .12s; user-select: none; }
+        .neis-cell:hover { filter: brightness(0.93); }
+        .neis-cell-inner {
+            display: flex; align-items: center; justify-content: center;
+            min-height: 26px; font-weight: 700; font-size: 0.8rem;
+        }
+        /* 빗금 배경 mixin */
+        .slash-absent  { background: repeating-linear-gradient(135deg,#fff 0,#fff 4px,#fca5a5 4px,#fca5a5 5.5px); }
+        .slash-late    { background: repeating-linear-gradient(135deg,#fff 0,#fff 4px,#fcd34d 4px,#fcd34d 5.5px); }
+        .slash-early   { background: repeating-linear-gradient(135deg,#fff 0,#fff 4px,#c4b5fd 4px,#c4b5fd 5.5px); }
+        .slash-result  { background: repeating-linear-gradient(135deg,#fff 0,#fff 4px,#93c5fd 4px,#93c5fd 5.5px); }
+        .slash-ok      { background: white; color: #94a3b8; }
+
+        /* 마감(summary) 배지 */
+        .neis-badge {
+            display: inline-block; font-size: 0.68rem; font-weight: 700;
+            padding: 2px 5px; border-radius: 5px; margin: 1px;
+        }
+        .neis-badge.absent { background: #fee2e2; color: var(--accent); }
+        .neis-badge.late   { background: #fef3c7; color: var(--warn); }
+        .neis-badge.early  { background: #ede9fe; color: #7c3aed; }
+        .neis-badge.result { background: #dbeafe; color: var(--primary); }
+        .neis-badge.doc-need  { background: #fef9c3; color: #854d0e; border: 1px solid #fde047; cursor:pointer; }
+        .neis-badge.doc-ok    { background: #dcfce7; color: #15803d; border: 1px solid #86efac; cursor:pointer; }
+
+        /* 나이스 입력 모달 */
+        .neis-overlay {
+            display:none; position:fixed; inset:0;
+            background:rgba(0,0,0,.45); z-index:3000;
+            align-items:flex-end; justify-content:center;
+        }
+        .neis-overlay.show { display:flex; }
+        .neis-sheet {
+            background:white; border-radius:20px 20px 0 0;
+            width:100%; max-width:600px; padding:20px 16px 32px;
+            animation:slideUp .25s ease; max-height:88vh; overflow-y:auto;
+        }
+        .neis-sheet-title { font-size:1rem; font-weight:700; text-align:center; margin-bottom:14px; }
+        .neis-sheet-title small { font-size:.78rem; color:var(--muted); font-weight:400; }
+        .neis-type-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:7px; margin-bottom:14px; }
+        .neis-type-btn {
+            padding:10px 4px; border-radius:10px; border:2px solid var(--border);
+            font-size:.8rem; font-weight:600; cursor:pointer; background:white;
+            transition:all .15s; text-align:center;
+        }
+        .neis-type-btn.t-ok     { border-color:var(--success); background:#f0fdf4; color:var(--success); }
+        .neis-type-btn.t-absent { border-color:var(--accent);  background:#fee2e2; color:var(--accent); }
+        .neis-type-btn.t-late   { border-color:var(--warn);    background:#fef3c7; color:var(--warn); }
+        .neis-type-btn.t-early  { border-color:#7c3aed;        background:#ede9fe; color:#7c3aed; }
+        .neis-type-btn.t-result { border-color:var(--primary); background:var(--primary-light); color:var(--primary); }
+        .neis-period-row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:14px; }
+        .neis-period-btn {
+            padding:8px 13px; border-radius:8px; border:1.5px solid var(--border);
+            font-size:.8rem; font-weight:600; cursor:pointer; background:white; transition:all .15s;
+        }
+        .neis-period-btn.sel { border-color:var(--primary); background:var(--primary); color:white; }
+        .neis-reason-row { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-bottom:14px; }
+        .neis-reason-btn {
+            padding:8px 4px; border-radius:8px; border:1px solid var(--border);
+            font-size:.75rem; font-weight:600; cursor:pointer; background:white; transition:all .15s; text-align:center;
+        }
+        .neis-reason-btn.sel { border-color:var(--primary); background:var(--primary-light); color:var(--primary); }
+        /* doc section (재사용) */
+        .neis-doc-section {
+            margin-bottom:14px; padding:12px 14px;
+            background:#fefce8; border:1.5px solid #fde68a; border-radius:10px;
+        }
+        .neis-doc-section.received { background:#f0fdf4; border-color:#86efac; }
+        .neis-doc-title { font-size:.82rem; font-weight:600; color:#854d0e; margin-bottom:10px; }
+        .neis-doc-section.received .neis-doc-title { color:#15803d; }
+        .neis-doc-toggle {
+            width:100%; padding:10px; border-radius:10px; border:2px solid #fde68a;
+            background:white; color:#854d0e; font-weight:700; font-size:.88rem;
+            cursor:pointer; transition:all .2s;
+        }
+        .neis-doc-toggle.checked { background:#16a34a; color:white; border-color:#15803d; }
+
+        /* ── 종례 테이블 추가 UI ── */
+        .neis-toolbar {
+            display: flex; gap: 7px; flex-wrap: wrap;
+            margin-bottom: 8px; align-items: center;
+        }
+        .neis-toolbar button {
+            padding: 7px 12px; border-radius: 8px; border: 1px solid var(--border);
+            font-size: 0.78rem; font-weight: 600; cursor: pointer; background: white;
+        }
+        .neis-toolbar .btn-multi { background: #eff6ff; border-color: var(--primary); color: var(--primary); }
+        .neis-toolbar .btn-multi.active { background: var(--primary); color: white; }
+        .neis-toolbar .btn-clear-all { background: #fee2e2; border-color: var(--accent); color: var(--accent); }
+        .neis-toolbar .btn-bulk-input { background: #f0fdf4; border-color: var(--success); color: var(--success); }
+        .neis-select-hint { font-size: 0.74rem; color: var(--muted); padding: 2px 6px; }
+
+        /* 다중선택 체크박스 열 */
+        .neis-table td.chk-cell { width: 28px; padding: 2px; cursor: pointer; }
+        .neis-check {
+            width: 17px; height: 17px; accent-color: var(--primary); cursor: pointer;
+        }
+        .neis-table tr.selected-row { background: #eff6ff !important; }
+
+        /* 비고란 */
+        .neis-table td.memo-cell { min-width: 70px; }
+        .memo-input {
+            width: 100%; border: none; background: transparent;
+            font-size: 0.7rem; color: var(--muted); padding: 2px 3px;
+            outline: none; font-family: inherit;
+        }
+        .memo-input:focus { background: #f8fafc; border-radius: 4px; }
+
+        /* 일괄입력 모달 섹션 */
+        .bulk-selected-names {
+            background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px;
+            padding: 8px 12px; font-size: 0.8rem; margin-bottom: 12px;
+            color: var(--primary); font-weight: 600; line-height: 1.6;
+        }
+    
+    
+
         /* ── 서류 제출 상태 ── */
         .student-item.doc-received { border-color: #16a34a !important; background: #f0fdf4 !important; }
         .student-item.doc-received b { color: #15803d !important; }
@@ -318,7 +460,7 @@
         .doc-toggle-btn.checked { background: #16a34a; color: white; border-color: #15803d; }
     </style>
 </head>
-<body style="">
+<body>
 
 <!-- 📎 기본 시간표 엑셀 임베드 (base64) - 처음 사용 시 자동으로 인식됨 -->
 <script type="application/octet-stream;base64" id="__embedded_default_xlsx__">
@@ -670,10 +812,59 @@ AA==
     </div>
 </div>
 
+<!-- ── 나이스 스타일 출결 입력 모달 (종례부) ── -->
+<div class="neis-overlay" id="neisModal" onclick="neisCloseIfOutside(event)">
+    <div class="neis-sheet">
+        <div class="modal-handle"></div>
+        <div class="neis-sheet-title" id="neisModalTitle">출결 입력</div>
+
+        <!-- 일괄입력 시 선택된 학생 표시 -->
+        <div class="bulk-selected-names" id="neisSelectedNames" style="display:none;"></div>
+
+        <!-- 유형 선택 -->
+        <div class="neis-type-grid">
+            <button class="neis-type-btn t-ok"     onclick="neisSelectType('출석')">✅ 출석</button>
+            <button class="neis-type-btn t-absent"  onclick="neisSelectType('결석')">❌ 결석</button>
+            <button class="neis-type-btn t-late"    onclick="neisSelectType('지각')">⏰ 지각</button>
+            <button class="neis-type-btn t-early"   onclick="neisSelectType('조퇴')">🚪 조퇴</button>
+            <button class="neis-type-btn t-result"  onclick="neisSelectType('결과')">📋 결과</button>
+            <button class="neis-type-btn"           onclick="neisSelectType('clear')" style="border-color:#94a3b8;color:#94a3b8;">🗑 지우기</button>
+        </div>
+
+        <!-- 교시 선택 (지각/조퇴/결과 시 표시) -->
+        <div id="neisPeriodSection" style="display:none;">
+            <div class="neis-period-label" id="neisPeriodLabel">교시 선택</div>
+            <div class="neis-period-row" id="neisPeriodRow"></div>
+        </div>
+
+        <!-- 사유 선택 -->
+        <div id="neisReasonSection" style="display:none;">
+            <div class="neis-period-label">사유</div>
+            <div class="neis-reason-row" id="neisReasonRow"></div>
+        </div>
+
+        <!-- 비고 -->
+        <div id="neisMemoSection" style="display:none; margin-bottom:14px;">
+            <div class="neis-period-label">비고 (선택)</div>
+            <input type="text" id="neisMemoInput" placeholder="예) 병원 진료, 가족행사 등"
+                style="width:100%;border:1px solid var(--border);border-radius:8px;padding:9px 12px;font-size:.85rem;background:white;box-sizing:border-box;">
+        </div>
+
+        <!-- 서류 체크 (인정 사유 시) -->
+        <div class="neis-doc-section" id="neisDocSection" style="display:none;">
+            <div class="neis-doc-title" id="neisDocTitle">📋 서류 수령 여부</div>
+            <button class="neis-doc-toggle" id="neisDocToggle" onclick="neisToggleDoc()">📄 서류 미수령</button>
+        </div>
+
+        <button class="modal-save-btn" onclick="neisSave()">저장</button>
+        <button class="modal-cancel-btn" onclick="neisClose()">취소</button>
+    </div>
+</div>
+
 <div class="card date-bar">
-    <span id="displayDate">2026-04-29 (수)</span>
+    <span id="displayDate">2026-04-28 (화)</span>
     <input type="date" id="dateInput" onchange="changeDate(this.value)">
-    <span class="version-badge">v0.8</span>
+    <span class="version-badge">v1.1</span>
 </div>
 
 <div class="nav-tabs">
@@ -696,9 +887,53 @@ AA==
     </div>
     <div id="todayList"><div class="class-item homeroom" id="class-header-homeroom_AM">
         <div><span class="class-name">🏫 조회</span></div>
-        <span class="class-time">0교시 · 조회</span></div><div id="st-homeroom_AM" class="student-area"><p style="font-size:0.82rem;color:var(--muted);text-align:center;padding:8px">학생 명단을 설정에서 등록하세요 (학번·성명·전화)</p></div><div class="empty-msg">📚 오늘(수요일) 수업이 없습니다.</div><div class="class-item homeroom" id="class-header-homeroom_PM">
+        <span class="class-time">0교시 · 조회</span></div><div id="st-homeroom_AM" class="student-area" style="display: none;"><div class="roll-call-bar">
+            <label>인원 확인</label>
+            <input type="number" id="roll-input-homeroom_AM" min="0" max="26" placeholder="26" style="width:58px;">
+            <button class="roll-call-btn" onclick="checkRollCall('homeroom_AM', 26)">확인</button>
+            <span class="roll-call-result" id="roll-result-homeroom_AM"></span></div><div class="student-grid"><div class="student-item att-출석" id="sitem-homeroom_AM-30801">30801<b>고서진</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-6278-9118</span><span class="ph-row"><span class="ph-tag">보</span>010-2242-9118</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30802">30802<b>김민지</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-5133-9297</span><span class="ph-row"><span class="ph-tag">보</span>010-8633-9297</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30803">30803<b>김예림</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-2276-0901</span><span class="ph-row"><span class="ph-tag">보</span>010-7742-4785</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30804">30804<b>김유림</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-8841-8102</span><span class="ph-row"><span class="ph-tag">보</span>010-2896-2975</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30805">30805<b>김지연</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-3080-1431</span><span class="ph-row"><span class="ph-tag">보</span>010-4324-1431</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30806">30806<b>박다인</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-5721-3808</span><span class="ph-row"><span class="ph-tag">보</span>010-9040-3808</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30807">30807<b>박서빈</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-4140-8533</span><span class="ph-row"><span class="ph-tag">보</span>010-5178-8533</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30808">30808<b>송예은</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-5319-0668</span><span class="ph-row"><span class="ph-tag">보</span>010-9201-0433</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30809">30809<b>이채원</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-7638-7217</span><span class="ph-row"><span class="ph-tag">보</span>010-3764-7216</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30810">30810<b>이하진</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-6259-1372</span><span class="ph-row"><span class="ph-tag">보</span>010-2168-1442</span></div></div><div class="student-item att-결석" id="sitem-homeroom_AM-30811">30811<b>지연주</b><span class="att-badge badge-결석">결석 · 인정</span><div class="phone-info"><span class="ph-row absent"><span class="ph-tag">학</span>010-7303-7501</span><span class="ph-row absent"><span class="ph-tag">보</span>010-3167-7501</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30812">30812<b>최선영</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-3746-3658</span><span class="ph-row"><span class="ph-tag">보</span>010-9205-0308</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30813">30813<b>한유주</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-8998-8091</span><span class="ph-row"><span class="ph-tag">보</span>010-7207-8091</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30814">30814<b>강서인</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-6205-0230</span><span class="ph-row"><span class="ph-tag">보</span>010-8750-8544</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30815">30815<b>김민서</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-3169-9164</span><span class="ph-row"><span class="ph-tag">보</span>010-9474-2728</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30816">30816<b>김수은</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-8927-3559</span><span class="ph-row"><span class="ph-tag">보</span>010-8911-3559</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30817">30817<b>김영은</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-2196-6264</span><span class="ph-row"><span class="ph-tag">보</span>010-3814-1787</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30818">30818<b>김예주</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-2421-6897</span><span class="ph-row"><span class="ph-tag">보</span>010-5126-6897</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30819">30819<b>박선아</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-2489-4871</span><span class="ph-row"><span class="ph-tag">보</span>010-5289-4871</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30820">30820<b>안해랑</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-9061-4962</span><span class="ph-row"><span class="ph-tag">보</span>010-3060-4962</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30821">30821<b>유수담</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-5215-9269</span><span class="ph-row"><span class="ph-tag">보</span>010-5211-9717</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30822">30822<b>이서현</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-7524-9631</span><span class="ph-row"><span class="ph-tag">보</span>010-4187-9631</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30823">30823<b>이소이</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-8363-7917</span><span class="ph-row"><span class="ph-tag">보</span>010-7233-1223</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30824">30824<b>이하영</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-4678-5268</span><span class="ph-row"><span class="ph-tag">보</span>010-5244-3336</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30825">30825<b>조예준</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-4854-2697</span><span class="ph-row"><span class="ph-tag">보</span>010-4849-2697</span></div></div><div class="student-item att-출석" id="sitem-homeroom_AM-30826">30826<b>최유빈</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-7159-9442</span><span class="ph-row"><span class="ph-tag">보</span>010-7932-9442</span></div></div></div></div><div class="class-item" id="class-header-1777350750781.5667">
+                <div>
+                    <span class="teacher-label">이화익</span><br>
+                    <span class="class-name">305 자율</span>
+                </div>
+                <span class="class-time">화1 (08:10)</span></div><div id="st-1777350750781.5667" class="student-area" style="display: none;"><div class="roll-call-bar">
+            <label>인원 확인</label>
+            <input type="number" id="roll-input-1777350750781.5667" min="0" max="27" placeholder="27" style="width:58px;">
+            <button class="roll-call-btn" onclick="checkRollCall('1777350750781.5667', 27)">확인</button>
+            <span class="roll-call-result" id="roll-result-1777350750781.5667"></span></div><div class="student-grid"><div class="student-item att-출석" id="sitem-1777350750781.5667-30501">30501<b>곽서윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30502">30502<b>김나윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30503">30503<b>김민아</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30504">30504<b>김민지</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30505">30505<b>김은선</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30506">30506<b>김지원</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30507">30507<b>김태희</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30508">30508<b>류해인</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30509">30509<b>박예슬</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30510">30510<b>심지후</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30511">30511<b>이윤서</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30512">30512<b>이지우</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30513">30513<b>이채원</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30514">30514<b>최서은</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30515">30515<b>하정인</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30516">30516<b>홍솔비</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30517">30517<b>김서연</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30518">30518<b>김서영</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30519">30519<b>김아린</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30520">30520<b>김효선</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30521">30521<b>백예슬</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30522">30522<b>서지민</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30523">30523<b>용왕은</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30524">30524<b>이예은</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30525">30525<b>이윤지</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30526">30526<b>정현희</b></div><div class="student-item att-출석" id="sitem-1777350750781.5667-30527">30527<b>조희진</b></div></div></div><div class="class-item" id="class-header-1777350750781.6013">
+                <div>
+                    <span class="teacher-label">이화익</span><br>
+                    <span class="class-name">304 자율</span>
+                </div>
+                <span class="class-time">화2 (09:10)</span></div><div id="st-1777350750781.6013" class="student-area"><div class="roll-call-bar">
+            <label>인원 확인</label>
+            <input type="number" id="roll-input-1777350750781.6013" min="0" max="27" placeholder="27" style="width:58px;">
+            <button class="roll-call-btn" onclick="checkRollCall('1777350750781.6013', 27)">확인</button>
+            <span class="roll-call-result" id="roll-result-1777350750781.6013"></span></div><div class="student-grid"><div class="student-item att-출석" id="sitem-1777350750781.6013-30401">30401<b>강지안</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30402">30402<b>김가은</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30403">30403<b>김민서</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30404">30404<b>김수민</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30405">30405<b>김주은</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30406">30406<b>류다윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30407">30407<b>박소연</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30408">30408<b>배지현</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30409">30409<b>송지현</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30410">30410<b>안수진</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30411">30411<b>이나경</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30412">30412<b>이라현</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30413">30413<b>이수아</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30414">30414<b>이은재</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30415">30415<b>이지윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30416">30416<b>전이현</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30417">30417<b>정다현</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30418">30418<b>정예은</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30419">30419<b>김규린</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30420">30420<b>김하윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30421">30421<b>박주현</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30422">30422<b>송화연</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30423">30423<b>신서영</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30424">30424<b>이서윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30425">30425<b>이수빈</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30426">30426<b>조윤주</b></div><div class="student-item att-출석" id="sitem-1777350750781.6013-30427">30427<b>조혜빈</b></div></div></div><div class="class-item" id="class-header-1777350750781.2483">
+                <div>
+                    <span class="teacher-label">이화익</span><br>
+                    <span class="class-name">306 미적</span>
+                </div>
+                <span class="class-time">화3 (10:10)</span></div><div id="st-1777350750781.2483" class="student-area"><div class="roll-call-bar">
+            <label>인원 확인</label>
+            <input type="number" id="roll-input-1777350750781.2483" min="0" max="30" placeholder="30" style="width:58px;">
+            <button class="roll-call-btn" onclick="checkRollCall('1777350750781.2483', 30)">확인</button>
+            <span class="roll-call-result" id="roll-result-1777350750781.2483"></span></div><div class="student-grid"><div class="student-item att-출석" id="sitem-1777350750781.2483-30305">30305<b>연태린</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30308">30308<b>이채윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30414">30414<b>이은재</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30424">30424<b>이서윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30425">30425<b>이수빈</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30426">30426<b>조윤주</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30501">30501<b>곽서윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30506">30506<b>김지원</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30507">30507<b>김태희</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30508">30508<b>류해인</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30515">30515<b>하정인</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30520">30520<b>김효선</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30525">30525<b>이윤지</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30601">30601<b>김고은</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30602">30602<b>김소현</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30611">30611<b>우다윤</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30612">30612<b>윤송이</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30616">30616<b>김민아</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30617">30617<b>김민하</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30618">30618<b>김세이</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30621">30621<b>신효정</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30622">30622<b>이소정</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30624">30624<b>조보경</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30707">30707<b>박정서</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30714">30714<b>강예서</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30724">30724<b>전예린</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30801">30801<b>고서진</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30804">30804<b>김유림</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30814">30814<b>강서인</b></div><div class="student-item att-출석" id="sitem-1777350750781.2483-30815">30815<b>김민서</b></div></div></div><div class="class-item" id="class-header-1777350750781.7712">
+                <div>
+                    <span class="teacher-label">이화익</span><br>
+                    <span class="class-name">301 경수</span>
+                </div>
+                <span class="class-time">화6 (14:00)</span></div><div id="st-1777350750781.7712" class="student-area"><div class="roll-call-bar">
+            <label>인원 확인</label>
+            <input type="number" id="roll-input-1777350750781.7712" min="0" max="13" placeholder="13" style="width:58px;">
+            <button class="roll-call-btn" onclick="checkRollCall('1777350750781.7712', 13)">확인</button>
+            <span class="roll-call-result" id="roll-result-1777350750781.7712"></span></div><div class="student-grid"><div class="student-item att-출석" id="sitem-1777350750781.7712-30118">30118<b>박소연</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30122">30122<b>손예린</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30210">30210<b>이현영</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30220">30220<b>송수빈</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30311">30311<b>고은</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30312">30312<b>김주아</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30320">30320<b>최주영</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30427">30427<b>조혜빈</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30609">30609<b>신하율</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30711">30711<b>이채원</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30719">30719<b>석지우</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30810">30810<b>이하진</b></div><div class="student-item att-출석" id="sitem-1777350750781.7712-30826">30826<b>최유빈</b></div></div></div><div class="class-item homeroom" id="class-header-homeroom_PM">
         <div><span class="class-name">🏫 종례</span></div>
-        <span class="class-time">8교시 · 종례</span></div><div id="st-homeroom_PM" class="student-area"><p style="font-size:0.82rem;color:var(--muted);text-align:center;padding:8px">학생 명단을 설정에서 등록하세요 (학번·성명·전화)</p></div></div>
+        <span class="class-time">8교시 · 종례</span></div><div id="st-homeroom_PM" class="student-area"><div class="roll-call-bar">
+            <label>인원 확인</label>
+            <input type="number" id="roll-input-homeroom_PM" min="0" max="26" placeholder="26" style="width:58px;">
+            <button class="roll-call-btn" onclick="checkRollCall('homeroom_PM', 26)">확인</button>
+            <span class="roll-call-result" id="roll-result-homeroom_PM"></span></div><div class="student-grid"><div class="student-item att-출석" id="sitem-homeroom_PM-30801">30801<b>고서진</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-6278-9118</span><span class="ph-row"><span class="ph-tag">보</span>010-2242-9118</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30802">30802<b>김민지</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-5133-9297</span><span class="ph-row"><span class="ph-tag">보</span>010-8633-9297</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30803">30803<b>김예림</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-2276-0901</span><span class="ph-row"><span class="ph-tag">보</span>010-7742-4785</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30804">30804<b>김유림</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-8841-8102</span><span class="ph-row"><span class="ph-tag">보</span>010-2896-2975</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30805">30805<b>김지연</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-3080-1431</span><span class="ph-row"><span class="ph-tag">보</span>010-4324-1431</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30806">30806<b>박다인</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-5721-3808</span><span class="ph-row"><span class="ph-tag">보</span>010-9040-3808</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30807">30807<b>박서빈</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-4140-8533</span><span class="ph-row"><span class="ph-tag">보</span>010-5178-8533</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30808">30808<b>송예은</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-5319-0668</span><span class="ph-row"><span class="ph-tag">보</span>010-9201-0433</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30809">30809<b>이채원</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-7638-7217</span><span class="ph-row"><span class="ph-tag">보</span>010-3764-7216</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30810">30810<b>이하진</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-6259-1372</span><span class="ph-row"><span class="ph-tag">보</span>010-2168-1442</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30811">30811<b>지연주</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-7303-7501</span><span class="ph-row"><span class="ph-tag">보</span>010-3167-7501</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30812">30812<b>최선영</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-3746-3658</span><span class="ph-row"><span class="ph-tag">보</span>010-9205-0308</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30813">30813<b>한유주</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-8998-8091</span><span class="ph-row"><span class="ph-tag">보</span>010-7207-8091</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30814">30814<b>강서인</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-6205-0230</span><span class="ph-row"><span class="ph-tag">보</span>010-8750-8544</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30815">30815<b>김민서</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-3169-9164</span><span class="ph-row"><span class="ph-tag">보</span>010-9474-2728</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30816">30816<b>김수은</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-8927-3559</span><span class="ph-row"><span class="ph-tag">보</span>010-8911-3559</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30817">30817<b>김영은</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-2196-6264</span><span class="ph-row"><span class="ph-tag">보</span>010-3814-1787</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30818">30818<b>김예주</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-2421-6897</span><span class="ph-row"><span class="ph-tag">보</span>010-5126-6897</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30819">30819<b>박선아</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-2489-4871</span><span class="ph-row"><span class="ph-tag">보</span>010-5289-4871</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30820">30820<b>안해랑</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-9061-4962</span><span class="ph-row"><span class="ph-tag">보</span>010-3060-4962</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30821">30821<b>유수담</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-5215-9269</span><span class="ph-row"><span class="ph-tag">보</span>010-5211-9717</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30822">30822<b>이서현</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-7524-9631</span><span class="ph-row"><span class="ph-tag">보</span>010-4187-9631</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30823">30823<b>이소이</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-8363-7917</span><span class="ph-row"><span class="ph-tag">보</span>010-7233-1223</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30824">30824<b>이하영</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-4678-5268</span><span class="ph-row"><span class="ph-tag">보</span>010-5244-3336</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30825">30825<b>조예준</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-4854-2697</span><span class="ph-row"><span class="ph-tag">보</span>010-4849-2697</span></div></div><div class="student-item att-출석" id="sitem-homeroom_PM-30826">30826<b>최유빈</b><div class="phone-info"><span class="ph-row"><span class="ph-tag">학</span>010-7159-9442</span><span class="ph-row"><span class="ph-tag">보</span>010-7932-9442</span></div></div></div></div></div>
 </div>
 
 <!-- ── 시간표 탭 ── -->
@@ -731,6 +966,9 @@ AA==
                 <button class="csv-btn" style="padding:7px 14px;border-radius:6px;border:none;color:white;font-weight:600;font-size:0.8rem;cursor:pointer;" onclick="exportMonthlyStatsCSV()">📥 CSV</button>
             </div>
         </div>
+        <div style="margin-top:4px;padding:10px 14px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;font-size:0.78rem;color:#166534;">
+            📥 <b>기한 설정 출석표 다운로드(엑셀)</b>는 <b>⚙️ 설정</b> 탭의 「출결기록 CSV 내보내기」 섹션에 있습니다.
+        </div>
         <div id="statsContent"></div>
     </div>
 </div>
@@ -751,11 +989,24 @@ AA==
             <p style="font-size:0.75rem;color:var(--muted);margin-top:4px;">※ 전체 데이터(수업·학생·출결·전화번호)를 백업·복원합니다.</p>
         </div>
         <div class="save-section" style="background:#fef3c7;border-color:#fde68a;">
-            <h3 style="color:#854d0e;">📊 출결기록 CSV 내보내기</h3>
-            <div class="save-row">
-                <button class="csv-btn" onclick="exportAttendanceCSV()">📥 전체 출결기록 CSV</button>
+            <h3 style="color:#854d0e;">📊 기한 설정 출석표 다운로드</h3>
+            <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px;">
+                <div style="display:flex;flex-direction:column;gap:3px;flex:1;min-width:120px;">
+                    <label style="font-size:0.72rem;color:var(--muted);font-weight:600;">시작일</label>
+                    <input type="date" id="xlsxStartDate"
+                        style="border:1px solid var(--border);border-radius:7px;padding:7px 9px;font-size:0.85rem;background:white;">
+                </div>
+                <div style="font-size:1.1rem;color:var(--muted);margin-top:18px;">~</div>
+                <div style="display:flex;flex-direction:column;gap:3px;flex:1;min-width:120px;">
+                    <label style="font-size:0.72rem;color:var(--muted);font-weight:600;">종료일</label>
+                    <input type="date" id="xlsxEndDate"
+                        style="border:1px solid var(--border);border-radius:7px;padding:7px 9px;font-size:0.85rem;background:white;">
+                </div>
             </div>
-            <p style="font-size:0.75rem;color:var(--muted);margin-top:4px;">※ 엑셀에서 바로 열 수 있는 CSV 형식. 모든 날짜의 결석/지각/조퇴/결과 기록 포함.</p>
+            <div class="save-row">
+                <button class="csv-btn" onclick="exportAttendanceCSV()">📥 출결 엑셀 다운로드 (.xlsx)</button>
+            </div>
+            <p style="font-size:0.75rem;color:var(--muted);margin-top:4px;">※ 날짜 미선택 시 가장 최근 달 전체가 자동 선택됩니다.<br>시트1: 출석부(색상표), 시트2: 상세 데이터</p>
         </div>
         <div class="save-section" style="background:#f3e8ff;border-color:#d8b4fe;">
             <h3 style="color:#6b21a8;">💜 HTML 새 파일로 저장</h3>
@@ -852,7 +1103,7 @@ AA==
     <div class="card">
         <h2>👤 학생 명단 등록</h2>
         <p style="font-size:0.78rem;color:var(--muted);margin-bottom:8px;">수업 선택 후 명단을 붙여넣으세요. 학생 추가·변경 시 해당 수업을 선택하고 전체 명단을 다시 붙여넣으면 됩니다.</p>
-        <select id="classSelect"><option value="">수업 선택</option><option value="homeroom">🏫 조회·종례 (공통 학생명단)</option></select>
+        <select id="classSelect"><option value="">수업 선택</option><option value="homeroom">🏫 조회·종례 (공통 학생명단)</option><option value="0">이화익 / 305 미적 (월1 수2 금2)</option><option value="1">이화익 / 308 자율 (월6)</option><option value="2">이화익 / 306 미적 (월7 화3 목2)</option><option value="3">이화익 / 305 자율 (화1)</option><option value="4">이화익 / 304 자율 (화2)</option><option value="5">이화익 / 301 경수 (화6 수4 목6)</option><option value="6">이화익 / 306 자율 (목3)</option><option value="7">이화익 / 302 자율 (목7)</option><option value="8">이화익 / 303 자율 (금6)</option></select>
         <textarea id="stInput" style="height:100px;" placeholder="학번 성명 학생전화 보호자전화 (한 줄씩)
 예) 10101 홍길동 010-1234-5678 010-8765-4321
     10102 김철수 (전화번호 없어도 됨)"></textarea>
@@ -975,6 +1226,13 @@ function switchTab(mode) {
     });
     if (mode === 'timetable') renderTimetable();
     if (mode === 'stats') renderStats();
+    if (mode === 'manage') {
+        // 날짜 범위 기본값: 이번 달 1일 ~ 오늘
+        const s = document.getElementById('xlsxStartDate');
+        const e = document.getElementById('xlsxEndDate');
+        if (s && !s.value) s.value = curDate.substring(0,7) + '-01';
+        if (e && !e.value) e.value = curDate;
+    }
 }
 
 function switchInputTab(mode) {
@@ -1087,10 +1345,15 @@ function renderToday() {
             const isDone = (classDoneRecord[curDate] && classDoneRecord[curDate][id]) ? true : false;
             div.className = 'class-item' + (isDone ? ' class-done' : '');
             div.id = `class-header-${id}`;
+
+            // 결석자 이름 계산
+            const absentHtml = getAbsentNamesHtml(id, c.students || []);
+
             div.innerHTML = `
                 <div>
                     ${c.teacher ? `<span class="teacher-label">${c.teacher}</span><br>` : ''}
                     <span class="class-name">${c.name}</span>
+                    ${absentHtml}
                 </div>
                 <span class="class-time">${timeStr}</span>`;
             div.onclick = () => toggleStArea(id);
@@ -1111,23 +1374,64 @@ function renderToday() {
     list.appendChild(makeStudentAreaDiv(pmclassId, true));
 }
 
+// 수업 카드용 결석자 이름 HTML 생성
+function getAbsentNamesHtml(classId, students) {
+    if (!students || students.length === 0) return '';
+    const attData = (attRecord[curDate] && attRecord[curDate][classId]) || {};
+    const absentStudents = students.filter(s => {
+        const a = attData[s.num];
+        return a && a.type === '결석';
+    });
+    if (absentStudents.length === 0) return '';
+    let nameStr = '';
+    if (absentStudents.length <= 3) {
+        nameStr = absentStudents.map(s => s.name).join(' ');
+    } else {
+        nameStr = `${absentStudents[0].name} 외 ${absentStudents.length - 1}명`;
+    }
+    return `<div class="absent-names">❌ ${nameStr}</div>`;
+}
+
 function makeHomeroomCard(label, id, timeStr) {
     const div = document.createElement('div');
     const isDone = (classDoneRecord[curDate] && classDoneRecord[curDate][id]) ? true : false;
     div.className = 'class-item homeroom' + (isDone ? ' class-done' : '');
     div.id = `class-header-${id}`;
+
+    // 종례: 조회/종례 공통 학생 중 결석/지각/조퇴 요약
+    const hrStudents = getHomeroomStudents();
+    const absentHtml = id === 'homeroom_PM' ? getHomeroomSummaryHtml(hrStudents) : '';
+
     div.innerHTML = `
-        <div><span class="class-name">🏫 ${label}</span></div>
+        <div><span class="class-name">🏫 ${label}</span>${absentHtml}</div>
         <span class="class-time">${timeStr}</span>`;
     div.onclick = () => toggleStArea(id);
     return div;
+}
+
+// 조회/종례 카드 요약 (결석/지각 이름)
+function getHomeroomSummaryHtml(students) {
+    if (!students || students.length === 0) return '';
+    const attData = (attRecord[curDate] && attRecord[curDate]['homeroom_AM']) || {};
+    const abnormal = students.filter(s => {
+        const a = attData[s.num];
+        return a && a.type !== '출석';
+    });
+    if (abnormal.length === 0) return '';
+    const names = abnormal.slice(0, 3).map(s => s.name).join(' ');
+    const extra = abnormal.length > 3 ? ` 외 ${abnormal.length - 3}명` : '';
+    return `<div class="absent-names">${names}${extra}</div>`;
 }
 
 function makeStudentAreaDiv(id, isHomeroom) {
     const stArea = document.createElement('div');
     stArea.id = `st-${id}`;
     stArea.className = 'student-area';
-    renderStudentArea(stArea, { students: getHomeroomStudents() }, id, isHomeroom);
+    if (id === 'homeroom_PM') {
+        renderNeisTable(stArea);
+    } else {
+        renderStudentArea(stArea, { students: getHomeroomStudents() }, id, isHomeroom);
+    }
     return stArea;
 }
 
@@ -1320,9 +1624,15 @@ function toggleStArea(id) {
     el.style.display = isOpen ? 'none' : 'block';
     if (header) header.classList.toggle('open', !isOpen);
     if (!isOpen) {
-        const isHR = id === 'homeroom_AM' || id === 'homeroom_PM';
-        const c = isHR ? { students: getHomeroomStudents() } : db.find(x => x.id == id);
-        if (c) renderStudentArea(el, c, id, isHR);
+        if (id === 'homeroom_PM') {
+            renderNeisTable(el);
+        } else {
+            const isHR = id === 'homeroom_AM';
+            const c = isHR ? { students: getHomeroomStudents() } : db.find(x => x.id == id);
+            if (c) renderStudentArea(el, c, id, isHR);
+        }
+        // 수업 카드 결석자 이름 갱신
+        refreshClassHeader(id);
     }
 }
 
@@ -1453,7 +1763,549 @@ function saveAttendance() {
     if (c && stArea && stArea.style.display === 'block') {
         renderStudentArea(stArea, c, classId, isHR);
     }
+    // 수업 카드 결석자 이름 갱신
+    refreshClassHeader(classId);
     closeModal();
+}
+
+// 수업 카드 헤더 결석자 이름 갱신
+function refreshClassHeader(classId) {
+    const header = document.getElementById(`class-header-${classId}`);
+    if (!header) return;
+    const c = db.find(x => x.id == classId);
+    if (!c) return; // 조회/종례는 별도 처리
+    const absentHtml = getAbsentNamesHtml(classId, c.students || []);
+    // 기존 absent-names div 교체
+    const existing = header.querySelector('.absent-names');
+    const nameSpan = header.querySelector('.class-name');
+    if (existing) existing.remove();
+    if (absentHtml && nameSpan) {
+        nameSpan.insertAdjacentHTML('afterend', absentHtml);
+    }
+}
+
+// ═══════════════════════════════════════════════
+// 나이스 스타일 종례부 (NEIS Table) - v0.9
+// ═══════════════════════════════════════════════
+const NEIS_PERIODS = ['조회','1','2','3','4','5','6','7','종례'];
+const NEIS_PERIOD_KEYS = ['조회', '1교시','2교시','3교시','4교시','5교시','6교시','7교시','종례'];
+
+// 나이스 출결 데이터: attRecord[date]['homeroom_AM'][num] 활용
+// neisRecord[date][studentNum] = { type, reason, docReceived, fromPeriod }
+// fromPeriod: 지각/조퇴/결과 시작 교시 (1~7, null=전 교시)
+
+function getNeisRec(studentNum) {
+    // homeroom_AM 기록 우선 사용 (조회에서 입력된 값)
+    const amRec = (attRecord[curDate] && attRecord[curDate]['homeroom_AM'] && attRecord[curDate]['homeroom_AM'][studentNum]) || null;
+    return amRec;
+}
+
+function renderNeisTable(container) {
+    const students = getHomeroomStudents();
+    container.innerHTML = '';
+
+    if (!students.length) {
+        container.innerHTML = '<p style="font-size:.82rem;color:var(--muted);text-align:center;padding:8px">학생 명단을 설정에서 등록하세요</p>';
+        return;
+    }
+
+    // ── 툴바 ──
+    const toolbar = document.createElement('div');
+    toolbar.className = 'neis-toolbar';
+    toolbar.innerHTML = `
+        <button class="btn-multi" id="neisMultiBtn" onclick="neisToggleMultiMode()">☑ 다중선택</button>
+        <button class="btn-bulk-input" id="neisBulkBtn" style="display:none;" onclick="neisBulkOpen()">✏️ 일괄입력</button>
+        <button class="btn-clear-all" onclick="neisClearAll()">🗑 전체 초기화</button>
+        <span class="neis-select-hint" id="neisSelectHint" style="display:none;">학생을 선택하세요</span>
+    `;
+    container.appendChild(toolbar);
+
+    // ── 테이블 ──
+    const wrap = document.createElement('div');
+    wrap.className = 'neis-table-wrap';
+
+    let html = `<table class="neis-table" id="neisTableEl">
+        <thead>
+            <tr>
+                <th id="neisChkHeader" style="display:none;width:28px;"></th>
+                <th>번호</th>
+                <th>성명</th>
+                <th>마감</th>
+                <th>비고</th>
+                <th>조회</th>
+                <th>1교시</th><th>2교시</th><th>3교시</th><th>4교시</th><th>5교시</th><th>6교시</th><th>7교시</th>
+                <th>종례</th>
+            </tr>
+        </thead>
+        <tbody>`;
+
+    students.forEach((s, idx) => {
+        const rec = getNeisRec(s.num);
+        const type = rec ? rec.type : null;
+        const reason = rec ? (rec.reason || '') : '';
+        const fromPeriod = rec ? (rec.fromPeriod !== undefined ? rec.fromPeriod : null) : null;
+        const docReceived = rec ? !!rec.docReceived : false;
+        const memo = rec ? (rec.memo || '') : '';
+
+        const summaryHtml = buildNeisSummary(type, reason, docReceived, s.num);
+
+        // 조회 포함 cellKeys: 조회=0, 1~5교시, 종례=8
+        const cellKeys = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+        let cellsHtml = cellKeys.map(p => {
+            const slashClass = getCellSlashClass(type, fromPeriod, p);
+            return `<td class="neis-cell ${slashClass}" onclick="neisOnCellClick('${s.num}','${s.name}')">
+                <div class="neis-cell-inner">${slashClass !== 'slash-ok' ? '/' : ''}</div>
+            </td>`;
+        }).join('');
+
+        html += `<tr id="neis-row-${s.num}">
+            <td class="chk-cell" style="display:none;" id="neis-chk-cell-${s.num}">
+                <input type="checkbox" class="neis-check" id="neis-chk-${s.num}"
+                    onchange="neisOnCheck('${s.num}')">
+            </td>
+            <td>${idx + 1}</td>
+            <td class="name-cell" onclick="neisOnCellClick('${s.num}','${s.name}')" style="cursor:pointer;">${s.name}</td>
+            <td class="summary-cell">${summaryHtml}</td>
+            <td class="memo-cell">
+                <input class="memo-input" value="${memo.replace(/"/g,'&quot;')}"
+                    placeholder="비고"
+                    onchange="neisSaveMemo('${s.num}', this.value)"
+                    onclick="event.stopPropagation()">
+            </td>
+            ${cellsHtml}
+        </tr>`;
+    });
+
+    html += `</tbody></table>`;
+    wrap.innerHTML = html;
+    container.appendChild(wrap);
+
+    // 다중선택 모드 복원
+    if (neisMultiMode) {
+        activateMultiModeUI();
+    }
+}
+
+// 셀에 어떤 빗금 클래스를 적용할지 결정
+// period: 0=조회, 1~7=교시, 8=종례
+function getCellSlashClass(type, fromPeriod, period) {
+    if (!type || type === '출석') return 'slash-ok';
+
+    if (type === '결석') return 'slash-absent';
+
+    if (type === '지각') {
+        // 지각: 조회(0)부터 fromPeriod-1 까지 빗금, fromPeriod 이후는 정상
+        // fromPeriod=null이면 전 교시 빗금
+        if (fromPeriod === null) return 'slash-late';
+        if (period < fromPeriod) return 'slash-late'; // 조회(0) 포함
+        return 'slash-ok';
+    }
+    if (type === '조퇴') {
+        // 조퇴: fromPeriod 이후 빗금, 종례(8) 포함
+        if (fromPeriod === null) return 'slash-early';
+        if (period === 8) return 'slash-early';
+        if (period >= fromPeriod) return 'slash-early';
+        return 'slash-ok';
+    }
+    if (type === '결과') {
+        if (fromPeriod === null) return 'slash-result';
+        if (period === fromPeriod) return 'slash-result';
+        return 'slash-ok';
+    }
+    return 'slash-ok';
+}
+
+function buildNeisSummary(type, reason, docReceived, studentNum) {
+    if (!type || type === '출석') return '';
+    const typeClass = { 결석:'absent', 지각:'late', 조퇴:'early', 결과:'result' }[type] || '';
+    const reasonStr = reason ? `(${reason})` : '';
+    let html = `<span class="neis-badge ${typeClass}">${type}${reasonStr}</span>`;
+    if (reason === '인정') {
+        const docClass = docReceived ? 'doc-ok' : 'doc-need';
+        const docLabel = docReceived ? '📄✓' : '📄?';
+        html += `<span class="neis-badge ${docClass}" onclick="neisToggleDocDirect('${studentNum}',event)">${docLabel}</span>`;
+    }
+    return html;
+}
+
+// ── 비고 저장 ──
+function neisSaveMemo(studentNum, memoVal) {
+    if (!attRecord[curDate]) attRecord[curDate] = {};
+    ['homeroom_AM','homeroom_PM'].forEach(hrId => {
+        if (!attRecord[curDate][hrId]) attRecord[curDate][hrId] = {};
+        if (!attRecord[curDate][hrId][studentNum]) attRecord[curDate][hrId][studentNum] = {};
+        attRecord[curDate][hrId][studentNum].memo = memoVal;
+    });
+    localStorage.setItem('teacher_att_v02', JSON.stringify(attRecord));
+}
+
+// ── 전체 초기화 ──
+function neisClearAll() {
+    if (!confirm(`${curDate} 출결 기록을 전체 초기화하시겠습니까?\n(조회·종례 기록 모두 삭제됩니다)`)) return;
+    if (attRecord[curDate]) {
+        delete attRecord[curDate]['homeroom_AM'];
+        delete attRecord[curDate]['homeroom_PM'];
+    }
+    localStorage.setItem('teacher_att_v02', JSON.stringify(attRecord));
+
+    // 종례 테이블 갱신 (열려있든 닫혀있든)
+    const stArea = document.getElementById('st-homeroom_PM');
+    if (stArea) renderNeisTable(stArea);
+
+    // 조회 카드 갱신
+    const amArea = document.getElementById('st-homeroom_AM');
+    if (amArea && amArea.style.display === 'block') {
+        renderStudentArea(amArea, { students: getHomeroomStudents() }, 'homeroom_AM', true);
+    }
+
+    // 종례 카드 헤더 요약 제거
+    const pmHeader = document.getElementById('class-header-homeroom_PM');
+    if (pmHeader) {
+        const existing = pmHeader.querySelector('.absent-names');
+        if (existing) existing.remove();
+    }
+    // 조회 카드 헤더 요약 제거
+    const amHeader = document.getElementById('class-header-homeroom_AM');
+    if (amHeader) {
+        const existing = amHeader.querySelector('.absent-names');
+        if (existing) existing.remove();
+    }
+
+    // 토스트 알림 (저장 완료 표시)
+    showToast('✅ 초기화 완료 — 저장되었습니다.');
+}
+
+function showToast(msg) {
+    const existing = document.getElementById('__toast__');
+    if (existing) existing.remove();
+    const t = document.createElement('div');
+    t.id = '__toast__';
+    t.style.cssText = [
+        'position:fixed;bottom:24px;left:50%;transform:translateX(-50%);',
+        'background:#15803d;color:#fff;padding:11px 20px;border-radius:12px;',
+        'font-size:14px;font-weight:600;z-index:99999;',
+        'box-shadow:0 4px 16px rgba(0,0,0,0.2);text-align:center;max-width:90vw;'
+    ].join('');
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => { t.style.transition='opacity .5s'; t.style.opacity='0'; setTimeout(()=>t.remove(),500); }, 2500);
+}
+
+// 조회에서 입력한 출결을 종례에 동기화 (조회 기록 → 종례에 복사)
+function neisSyncFromAM() {
+    if (!confirm('조회 기록을 종례부로 동기화하시겠습니까?\n(이미 입력된 종례 기록은 유지됩니다)')) return;
+    const amData = (attRecord[curDate] && attRecord[curDate]['homeroom_AM']) || {};
+    if (Object.keys(amData).length === 0) {
+        alert('조회에 입력된 출결 기록이 없습니다.');
+        return;
+    }
+    if (!attRecord[curDate]) attRecord[curDate] = {};
+    if (!attRecord[curDate]['homeroom_PM']) attRecord[curDate]['homeroom_PM'] = {};
+    // AM → PM 복사 (PM에 없는 학생만)
+    Object.entries(amData).forEach(([num, rec]) => {
+        if (!attRecord[curDate]['homeroom_PM'][num]) {
+            attRecord[curDate]['homeroom_PM'][num] = { ...rec };
+        }
+    });
+    localStorage.setItem('teacher_att_v02', JSON.stringify(attRecord));
+    const stArea = document.getElementById('st-homeroom_PM');
+    if (stArea) renderNeisTable(stArea);
+    alert('✅ 동기화 완료!');
+}
+
+// ── 다중선택 모드 ──
+let neisMultiMode = false;
+let neisSelectedNums = new Set();
+
+function neisToggleMultiMode() {
+    neisMultiMode = !neisMultiMode;
+    neisSelectedNums.clear();
+    const stArea = document.getElementById('st-homeroom_PM');
+    if (stArea && stArea.style.display === 'block') renderNeisTable(stArea);
+}
+
+function activateMultiModeUI() {
+    const btn = document.getElementById('neisMultiBtn');
+    const hint = document.getElementById('neisSelectHint');
+    const bulkBtn = document.getElementById('neisBulkBtn');
+    if (btn) { btn.textContent = '✕ 다중선택 해제'; btn.classList.add('active'); }
+    if (hint) hint.style.display = 'inline';
+
+    // 체크박스 열 표시
+    document.querySelectorAll('.chk-cell, #neisChkHeader').forEach(el => {
+        if (el) el.style.display = '';
+    });
+    // 선택 복원
+    neisSelectedNums.forEach(num => {
+        const cb = document.getElementById(`neis-chk-${num}`);
+        if (cb) cb.checked = true;
+        const row = document.getElementById(`neis-row-${num}`);
+        if (row) row.classList.add('selected-row');
+    });
+    updateBulkBtn();
+}
+
+function neisOnCheck(num) {
+    const cb = document.getElementById(`neis-chk-${num}`);
+    const row = document.getElementById(`neis-row-${num}`);
+    if (cb && cb.checked) {
+        neisSelectedNums.add(num);
+        if (row) row.classList.add('selected-row');
+    } else {
+        neisSelectedNums.delete(num);
+        if (row) row.classList.remove('selected-row');
+    }
+    updateBulkBtn();
+}
+
+function updateBulkBtn() {
+    const bulkBtn = document.getElementById('neisBulkBtn');
+    const hint = document.getElementById('neisSelectHint');
+    if (!bulkBtn) return;
+    if (neisSelectedNums.size > 0) {
+        bulkBtn.style.display = 'inline-block';
+        bulkBtn.textContent = `✏️ ${neisSelectedNums.size}명 일괄입력`;
+        if (hint) hint.style.display = 'none';
+    } else {
+        bulkBtn.style.display = 'none';
+        if (hint) hint.style.display = 'inline';
+    }
+}
+
+// 셀/이름 클릭 핸들러
+function neisOnCellClick(num, name) {
+    if (neisMultiMode) {
+        // 다중선택 모드: 체크박스 토글
+        const cb = document.getElementById(`neis-chk-${num}`);
+        if (cb) { cb.checked = !cb.checked; neisOnCheck(num); }
+    } else {
+        neisOpenModal(num, name);
+    }
+}
+
+// 일괄입력 열기
+function neisBulkOpen() {
+    if (neisSelectedNums.size === 0) return;
+    const students = getHomeroomStudents();
+    const selectedStudents = students.filter(s => neisSelectedNums.has(s.num));
+    const names = selectedStudents.map(s => s.name).join(', ');
+
+    neisState = {
+        bulkMode: true,
+        bulkNums: [...neisSelectedNums],
+        studentNum: null, studentName: '',
+        type: null, fromPeriod: null, reason: '', docReceived: false, memo: ''
+    };
+
+    document.getElementById('neisModalTitle').innerHTML = `일괄 출결 입력 <small>(${neisSelectedNums.size}명)</small>`;
+    const nameBox = document.getElementById('neisSelectedNames');
+    nameBox.style.display = 'block';
+    nameBox.textContent = `선택: ${names}`;
+    document.getElementById('neisMemoInput').value = '';
+    renderNeisModalState();
+    document.getElementById('neisModal').classList.add('show');
+}
+
+// 나이스 모달 상태
+let neisState = { studentNum: null, studentName: '', type: null, fromPeriod: null, reason: '', docReceived: false, memo: '', bulkMode: false, bulkNums: [] };
+
+function neisOpenModal(studentNum, studentName) {
+    const rec = getNeisRec(studentNum);
+    neisState = {
+        bulkMode: false, bulkNums: [],
+        studentNum, studentName,
+        type: rec ? rec.type : null,
+        fromPeriod: rec ? (rec.fromPeriod !== undefined ? rec.fromPeriod : null) : null,
+        reason: rec ? (rec.reason || '') : '',
+        docReceived: rec ? !!rec.docReceived : false,
+        memo: rec ? (rec.memo || '') : ''
+    };
+    document.getElementById('neisModalTitle').innerHTML = `${studentName} <small>출결 입력</small>`;
+    document.getElementById('neisSelectedNames').style.display = 'none';
+    document.getElementById('neisMemoInput').value = neisState.memo;
+    renderNeisModalState();
+    document.getElementById('neisModal').classList.add('show');
+}
+
+function neisClose() {
+    document.getElementById('neisModal').classList.remove('show');
+    document.getElementById('neisSelectedNames').style.display = 'none';
+}
+function neisCloseIfOutside(e) { if (e.target === document.getElementById('neisModal')) neisClose(); }
+
+function neisSelectType(t) {
+    if (t === 'clear') {
+        neisState.type = null; neisState.fromPeriod = null;
+        neisState.reason = ''; neisState.docReceived = false;
+    } else {
+        neisState.type = t;
+        if (t === '결석') neisState.fromPeriod = null;
+        neisState.reason = '';
+    }
+    renderNeisModalState();
+}
+
+function neisSelectPeriod(p) { neisState.fromPeriod = p; renderNeisModalState(); }
+function neisSelectReason(r) { neisState.reason = r; renderNeisModalState(); }
+function neisToggleDoc() { neisState.docReceived = !neisState.docReceived; renderNeisModalState(); }
+
+// 테이블에서 직접 서류 토글
+function neisToggleDocDirect(studentNum, e) {
+    e.stopPropagation();
+    const rec = getNeisRec(studentNum);
+    if (!rec) return;
+    rec.docReceived = !rec.docReceived;
+    if (!attRecord[curDate]) attRecord[curDate] = {};
+    ['homeroom_AM','homeroom_PM'].forEach(hrId => {
+        if (!attRecord[curDate][hrId]) attRecord[curDate][hrId] = {};
+        attRecord[curDate][hrId][studentNum] = { ...rec };
+    });
+    localStorage.setItem('teacher_att_v02', JSON.stringify(attRecord));
+    const stArea = document.getElementById('st-homeroom_PM');
+    if (stArea && stArea.style.display === 'block') renderNeisTable(stArea);
+}
+
+function renderNeisModalState() {
+    const { type, fromPeriod, reason, docReceived } = neisState;
+    const periodSec = document.getElementById('neisPeriodSection');
+    const reasonSec = document.getElementById('neisReasonSection');
+    const memoSec  = document.getElementById('neisMemoSection');
+    const docSec   = document.getElementById('neisDocSection');
+    const periodLabel = document.getElementById('neisPeriodLabel');
+    const periodRow = document.getElementById('neisPeriodRow');
+    const reasonRow = document.getElementById('neisReasonRow');
+
+    // 교시 선택: 지각은 조회(0)도 포함
+    if (type === '지각' || type === '조퇴' || type === '결과') {
+        periodSec.style.display = 'block';
+        if (type === '지각') {
+            periodLabel.textContent = '몇 교시부터 정상 출석? (그 이전 교시에 빗금)';
+            // 조회 포함: 조회=0, 1~7교시
+            const periodOptions = [
+                {label:'1교시',val:1},{label:'2교시',val:2},{label:'3교시',val:3},
+                {label:'4교시',val:4},{label:'5교시',val:5},{label:'6교시',val:6},{label:'7교시',val:7}
+            ];
+            // 조회 지각: fromPeriod=0 으로 저장 (조회부터 빗금=조회만 빗금, 1교시부터 정상 → fromPeriod=1)
+            // "조회에 지각" = 조회만 빗금 → fromPeriod=1
+            // "1교시 지각" = 조회+1교시 빗금 → fromPeriod=2 ... 아님
+            // 직관적으로: "몇 교시부터 출석?" 선택
+            // 조회도 선택지에 추가 (fromPeriod='조회' → 0)
+            periodRow.innerHTML = `<button class="neis-period-btn${fromPeriod === 0 ? ' sel':''}" onclick="neisSelectPeriod(0)">조회~</button>` +
+                periodOptions.map(p =>
+                    `<button class="neis-period-btn${fromPeriod === p.val ? ' sel':''}" onclick="neisSelectPeriod(${p.val})">${p.label}~</button>`
+                ).join('');
+        } else if (type === '조퇴') {
+            periodLabel.textContent = '몇 교시에 조퇴? (해당 교시부터 빗금)';
+            periodRow.innerHTML = [1,2,3,4,5,6,7].map(p =>
+                `<button class="neis-period-btn${fromPeriod === p ? ' sel':''}" onclick="neisSelectPeriod(${p})">${p}교시</button>`
+            ).join('');
+        } else {
+            periodLabel.textContent = '결과 발생 교시';
+            periodRow.innerHTML = [1,2,3,4,5,6,7].map(p =>
+                `<button class="neis-period-btn${fromPeriod === p ? ' sel':''}" onclick="neisSelectPeriod(${p})">${p}교시</button>`
+            ).join('');
+        }
+    } else {
+        periodSec.style.display = 'none';
+    }
+
+    // 사유
+    if (type && type !== '출석' && type !== 'clear' && type !== null) {
+        reasonSec.style.display = 'block';
+        const reasons = ['인정', '질병', '미인정', '기타'];
+        reasonRow.innerHTML = reasons.map(r =>
+            `<button class="neis-reason-btn${reason === r ? ' sel':''}" onclick="neisSelectReason('${r}')">${r}</button>`
+        ).join('');
+    } else {
+        reasonSec.style.display = 'none';
+    }
+
+    // 비고
+    memoSec.style.display = (type && type !== 'clear') ? 'block' : 'none';
+
+    // 서류 체크
+    if (type && type !== '출석' && reason === '인정') {
+        docSec.style.display = 'block';
+        const typeLabels = { 결석:'인정결석', 지각:'인정지각', 조퇴:'인정조퇴', 결과:'인정결과' };
+        document.getElementById('neisDocTitle').textContent = `📋 ${typeLabels[type]||'인정'} — ${docReceived ? '서류 수령 완료':'서류 수령 필요'}`;
+        const toggle = document.getElementById('neisDocToggle');
+        toggle.textContent = docReceived ? '✅ 서류 수령 완료' : '📄 서류 미수령 (탭하면 수령 처리)';
+        toggle.classList.toggle('checked', docReceived);
+        docSec.classList.toggle('received', docReceived);
+    } else {
+        docSec.style.display = 'none';
+    }
+}
+
+function neisSave() {
+    const { type, fromPeriod, reason, docReceived, bulkMode, bulkNums, studentNum } = neisState;
+    const memo = (document.getElementById('neisMemoInput').value || '').trim();
+
+    if (type && type !== '출석' && type !== 'clear' && !reason) { alert('사유를 선택해주세요.'); return; }
+    if ((type === '지각' || type === '조퇴' || type === '결과') && fromPeriod === null) {
+        alert('교시를 선택해주세요.'); return;
+    }
+
+    const targets = bulkMode ? bulkNums : [studentNum];
+
+    targets.forEach(num => {
+        if (!type || type === 'clear') {
+            if (attRecord[curDate]) {
+                ['homeroom_AM','homeroom_PM'].forEach(hrId => {
+                    if (attRecord[curDate][hrId]) delete attRecord[curDate][hrId][num];
+                });
+            }
+        } else if (type === '출석') {
+            setAtt('homeroom_AM', num, '출석', '', false);
+            setAtt('homeroom_PM', num, '출석', '', false);
+            // 출석도 비고 저장
+            if (memo) neisSaveMemoInternal(num, memo);
+        } else {
+            if (!attRecord[curDate]) attRecord[curDate] = {};
+            ['homeroom_AM','homeroom_PM'].forEach(hrId => {
+                if (!attRecord[curDate][hrId]) attRecord[curDate][hrId] = {};
+                attRecord[curDate][hrId][num] = { type, reason, docReceived, fromPeriod, memo };
+            });
+        }
+    });
+    localStorage.setItem('teacher_att_v02', JSON.stringify(attRecord));
+
+    // 다중선택 모드 해제
+    if (bulkMode) {
+        neisMultiMode = false;
+        neisSelectedNums.clear();
+    }
+
+    const stArea = document.getElementById('st-homeroom_PM');
+    if (stArea && stArea.style.display === 'block') renderNeisTable(stArea);
+    const amArea = document.getElementById('st-homeroom_AM');
+    if (amArea && amArea.style.display === 'block') {
+        renderStudentArea(amArea, { students: getHomeroomStudents() }, 'homeroom_AM', true);
+    }
+
+    // 종례 카드 헤더 결석자 요약 갱신
+    const pmHeader = document.getElementById('class-header-homeroom_PM');
+    if (pmHeader) {
+        const existing = pmHeader.querySelector('.absent-names');
+        if (existing) existing.remove();
+        const hrStudents = getHomeroomStudents();
+        const summaryHtml = getHomeroomSummaryHtml(hrStudents);
+        if (summaryHtml) {
+            const nameSpan = pmHeader.querySelector('.class-name');
+            if (nameSpan) nameSpan.insertAdjacentHTML('afterend', summaryHtml);
+        }
+    }
+
+    neisClose();
+}
+
+function neisSaveMemoInternal(num, memo) {
+    if (!attRecord[curDate]) attRecord[curDate] = {};
+    ['homeroom_AM','homeroom_PM'].forEach(hrId => {
+        if (!attRecord[curDate][hrId]) attRecord[curDate][hrId] = {};
+        if (!attRecord[curDate][hrId][num]) attRecord[curDate][hrId][num] = {};
+        attRecord[curDate][hrId][num].memo = memo;
+    });
 }
 
 // ───── 시간표 그리드 ─────────────────────────────────────
@@ -1974,106 +2826,325 @@ function importData(input) {
 
 // ───── 출결기록 CSV 내보내기 (월간출석부 양식) ─────────────
 function exportAttendanceCSV() {
-    // 기록된 날짜들에서 연도/월 목록 추출
-    const dates = Object.keys(attRecord).sort();
-    if (dates.length === 0) return alert('내보낼 출결 기록이 없습니다.');
+    const allDates = Object.keys(attRecord).sort();
+    if (allDates.length === 0) return alert('내보낼 출결 기록이 없습니다.');
 
-    // 어느 월을 내보낼지 선택 (현재 달 기본)
-    const months = [...new Set(dates.map(d => d.substring(0, 7)))].sort();
-    const targetMonth = months[months.length - 1]; // 가장 최근 월
+    if (typeof XLSX === 'undefined') return alert('엑셀 라이브러리 로딩 중입니다. 잠시 후 다시 시도해주세요.');
 
-    const [year, month] = targetMonth.split('-').map(Number);
+    // ── 날짜 범위 결정 ──
+    const startInput = document.getElementById('xlsxStartDate');
+    const endInput   = document.getElementById('xlsxEndDate');
+    let startDate = startInput ? startInput.value : '';
+    let endDate   = endInput   ? endInput.value   : '';
 
-    // 해당 월의 학교 수업일(출결 기록 있는 날) 목록
-    const monthDates = dates.filter(d => d.startsWith(targetMonth));
+    let rangeLabel = '';
+    let monthDates;
+
+    if (startDate && endDate) {
+        if (startDate > endDate) return alert('시작일이 종료일보다 늦습니다.');
+        monthDates = allDates.filter(d => d >= startDate && d <= endDate);
+        rangeLabel = `${startDate} ~ ${endDate}`;
+        if (monthDates.length === 0) return alert(`${rangeLabel} 기간에 출결 기록이 없습니다.`);
+    } else {
+        // 미선택: 가장 최근 달 자동
+        const months = [...new Set(allDates.map(d => d.substring(0, 7)))].sort();
+        const targetMonth = months[months.length - 1];
+        monthDates = allDates.filter(d => d.startsWith(targetMonth));
+        const [y, m] = targetMonth.split('-').map(Number);
+        rangeLabel = `${y}년 ${m}월`;
+    }
+
     const totalDays = monthDates.length;
-
-    // 학급 학생 명단
     const homeroomStudents = getHomeroomStudents();
-    if (homeroomStudents.length === 0) return alert('조회/종례 학생 명단이 없습니다.\n설정 → 학생 명단 등록에서 등록해주세요.');
+    if (!homeroomStudents.length) return alert('조회/종례 학생 명단이 없습니다.\n설정 → 학생 명단 등록에서 등록해주세요.');
 
-    // 각 학생의 출결 통계 계산
-    // 구분: 결석(질병/미인정/기타/인정), 지각(질병/미인정/기타/인정), 조퇴(질병/미인정/기타/인정), 결과(질병/미인정/기타/인정)
-    const TYPES = ['결석', '지각', '조퇴', '결과'];
     const REASONS_ORDER = ['질병', '미인정', '기타', '인정'];
 
-    // 학생별 집계
+    // ── 집계 ──
     const studentStats = {};
     homeroomStudents.forEach(s => {
         studentStats[s.num] = {
             num: s.num, name: s.name,
-            수업일수: totalDays,
-            정상출석: totalDays,
-            결석: { 질병:0, 미인정:0, 기타:0, 인정:0 },
-            지각: { 질병:0, 미인정:0, 기타:0, 인정:0 },
-            조퇴: { 질병:0, 미인정:0, 기타:0, 인정:0 },
-            결과: { 질병:0, 미인정:0, 기타:0, 인정:0 }
+            수업일수: totalDays, 정상출석: totalDays,
+            결석: {질병:0,미인정:0,기타:0,인정:0},
+            지각: {질병:0,미인정:0,기타:0,인정:0},
+            조퇴: {질병:0,미인정:0,기타:0,인정:0},
+            결과: {질병:0,미인정:0,기타:0,인정:0},
+            memos: []
         };
     });
-
-    // 조회/종례 기록으로 집계 (중복 방지: 같은 날 같은 type은 1회만)
     monthDates.forEach(date => {
         const dayData = attRecord[date] || {};
-        const counted = {}; // { studentNum: Set of types }
-        ['homeroom_AM', 'homeroom_PM'].forEach(hrId => {
-            const hrData = dayData[hrId] || {};
-            Object.keys(hrData).forEach(num => {
-                const att = hrData[num];
+        const counted = {};
+        ['homeroom_AM','homeroom_PM'].forEach(hrId => {
+            Object.entries(dayData[hrId] || {}).forEach(([num, att]) => {
                 if (!studentStats[num]) return;
                 if (!counted[num]) counted[num] = new Set();
-                const typeKey = `${att.type}`;
-                if (counted[num].has(typeKey)) return; // 중복 방지
-                counted[num].add(typeKey);
-                const reasonKey = REASONS_ORDER.includes(att.reason) ? att.reason : '기타';
-                if (studentStats[num][att.type]) {
-                    studentStats[num][att.type][reasonKey]++;
-                    // 정상출석에서 차감 (결석만 차감, 지각/조퇴/결과는 수업일수 그대로)
-                    if (att.type === '결석') studentStats[num].정상출석--;
+                const tk = att.type || '';
+                if (!tk || counted[num].has(tk)) return;
+                counted[num].add(tk);
+                const rk = REASONS_ORDER.includes(att.reason) ? att.reason : '기타';
+                if (studentStats[num][tk]) {
+                    studentStats[num][tk][rk]++;
+                    if (tk === '결석') studentStats[num].정상출석--;
+                }
+                if (att.memo && !studentStats[num].memos.includes(att.memo)) {
+                    studentStats[num].memos.push(`${date}: ${att.memo}`);
                 }
             });
         });
     });
 
-    // ── 헤더 1행: 학교명 + 월 ──
-    // 사진 형식:
-    // 학생코드 | 성명 | 수업일수 | 정상출석 | [결석:질병/미인정/기타/인정] | [지각:...] | [조퇴:...] | [결과:...] | 결석총계 | 지각총계 | 조퇴총계 | 결과총계
+    // ════════════════════════════════════════════
+    // 시트1: 사진 스타일 (병합헤더 + 색상)
+    // ════════════════════════════════════════════
+    const wb = XLSX.utils.book_new();
 
-    const titleRow = [`월간출석부 (${year}학년도 ${month}월)`];
-    const rows = [];
-    rows.push(titleRow);
-    rows.push([]); // 빈 줄
+    // 셀 데이터 직접 작성
+    const ws1 = {};
+    const R = (r, c) => XLSX.utils.encode_cell({r, c});
 
-    // 헤더 행 (사진과 동일한 2중 헤더)
-    const header1 = ['학생', '성명', '수업', '정상', '결석', '', '', '', '지각', '', '', '', '조퇴', '', '', '', '결과', '', '', '', '결석', '지각', '조퇴', '결과'];
-    const header2 = ['코드', '', '일수', '출석', '질병', '미인정', '기타', '인정', '질병', '미인정', '기타', '인정', '질병', '미인정', '기타', '인정', '질병', '미인정', '기타', '인정', '총계', '총계', '총계', '총계'];
-    rows.push(header1);
-    rows.push(header2);
+    // 색상 정의
+    const clrHeader  = { patternType:'solid', fgColor:{rgb:'1F497D'} }; // 진파랑
+    const clrSub     = { patternType:'solid', fgColor:{rgb:'4472C4'} }; // 파랑
+    const clrAbsent  = { patternType:'solid', fgColor:{rgb:'C00000'} }; // 빨강 (결석)
+    const clrLate    = { patternType:'solid', fgColor:{rgb:'FF6600'} }; // 주황 (지각)
+    const clrEarly   = { patternType:'solid', fgColor:{rgb:'7030A0'} }; // 보라 (조퇴)
+    const clrResult  = { patternType:'solid', fgColor:{rgb:'0070C0'} }; // 파랑 (결과)
+    const clrTotal   = { patternType:'solid', fgColor:{rgb:'375623'} }; // 초록 (합계)
+    const clrPink    = { patternType:'solid', fgColor:{rgb:'FFE7E7'} }; // 연분홍 (비정상값)
+    const white      = { patternType:'solid', fgColor:{rgb:'FFFFFF'} };
+    const clrLight   = { patternType:'solid', fgColor:{rgb:'F2F2F2'} };
 
-    // 학생 데이터 행
+    const fontWh = { bold:true, color:{rgb:'FFFFFF'}, sz:9, name:'맑은 고딕' };
+    const fontBk = { bold:true, color:{rgb:'000000'}, sz:9, name:'맑은 고딕' };
+    const fontSm = { bold:false, color:{rgb:'000000'}, sz:9, name:'맑은 고딕' };
+    const fontRed = { bold:true, color:{rgb:'C00000'}, sz:9, name:'맑은 고딕' };
+
+    const border = {
+        top:{style:'thin',color:{rgb:'BFBFBF'}},
+        bottom:{style:'thin',color:{rgb:'BFBFBF'}},
+        left:{style:'thin',color:{rgb:'BFBFBF'}},
+        right:{style:'thin',color:{rgb:'BFBFBF'}}
+    };
+    const alignCC = { horizontal:'center', vertical:'center', wrapText:true };
+    const alignLC = { horizontal:'left',   vertical:'center' };
+
+    function cell(v, font, fill, align, numFmt) {
+        const c = { v, t: typeof v==='number' ? 'n' : 's' };
+        const s = {};
+        if (font)   s.font   = font;
+        if (fill)   s.fill   = fill;
+        if (align)  s.alignment = align;
+        if (border) s.border = border;
+        if (numFmt) s.numFmt = numFmt;
+        c.s = s;
+        return c;
+    }
+
+    // 행 0: 타이틀
+    const className = `월간출석부 (${rangeLabel})`;
+    ws1[R(0,0)] = cell(className, {bold:true,sz:12,name:'맑은 고딕'}, {patternType:'solid',fgColor:{rgb:'1F497D'}}, alignLC);
+    // 타이틀 행 나머지 셀 (병합용 빈셀)
+    for (let c=1; c<=24; c++) ws1[R(0,c)] = cell('', fontWh, {patternType:'solid',fgColor:{rgb:'1F497D'}}, alignCC);
+
+    // 행 1: 대분류 헤더
+    // 열 레이아웃: 0=학생번호, 1=성명, 2=수업일수, 3=정상출석,
+    //             4~7=결석(질병/미인정/기타/인정), 8~11=지각, 12~15=조퇴, 16~19=결과,
+    //             20=결석총계, 21=지각총계, 22=조퇴총계, 23=결과총계, 24=비고
+    const bigHeaders = [
+        {c:0, label:'학생\n코드', fill:clrHeader, span:1},
+        {c:1, label:'성명',       fill:clrHeader, span:1},
+        {c:2, label:'수업\n일수', fill:clrHeader, span:1},
+        {c:3, label:'정상\n출석', fill:clrHeader, span:1},
+        {c:4, label:'결석',       fill:clrAbsent, span:4},
+        {c:8, label:'지각',       fill:clrLate,   span:4},
+        {c:12,label:'조퇴',       fill:clrEarly,  span:4},
+        {c:16,label:'결과',       fill:clrResult, span:4},
+        {c:20,label:'결석\n총계', fill:clrAbsent, span:1},
+        {c:21,label:'지각\n총계', fill:clrLate,   span:1},
+        {c:22,label:'조퇴\n총계', fill:clrEarly,  span:1},
+        {c:23,label:'결과\n총계', fill:clrResult, span:1},
+        {c:24,label:'비고',       fill:clrHeader, span:1},
+    ];
+    bigHeaders.forEach(h => {
+        ws1[R(1, h.c)] = cell(h.label, fontWh, h.fill, alignCC);
+        for (let i=1; i<h.span; i++) ws1[R(1, h.c+i)] = cell('', fontWh, h.fill, alignCC);
+    });
+
+    // 행 2: 소분류 헤더
+    const subCols = [
+        {c:0, label:'',      fill:clrHeader},
+        {c:1, label:'',      fill:clrHeader},
+        {c:2, label:'',      fill:clrHeader},
+        {c:3, label:'',      fill:clrHeader},
+        {c:4, label:'질병',  fill:clrAbsent},{c:5, label:'미인정', fill:clrAbsent},
+        {c:6, label:'기타',  fill:clrAbsent},{c:7, label:'인정',   fill:clrAbsent},
+        {c:8, label:'질병',  fill:clrLate},  {c:9, label:'미인정', fill:clrLate},
+        {c:10,label:'기타',  fill:clrLate},  {c:11,label:'인정',   fill:clrLate},
+        {c:12,label:'질병',  fill:clrEarly}, {c:13,label:'미인정', fill:clrEarly},
+        {c:14,label:'기타',  fill:clrEarly}, {c:15,label:'인정',   fill:clrEarly},
+        {c:16,label:'질병',  fill:clrResult},{c:17,label:'미인정', fill:clrResult},
+        {c:18,label:'기타',  fill:clrResult},{c:19,label:'인정',   fill:clrResult},
+        {c:20,label:'',      fill:clrAbsent},{c:21,label:'',       fill:clrLate},
+        {c:22,label:'',      fill:clrEarly}, {c:23,label:'',       fill:clrResult},
+        {c:24,label:'',      fill:clrHeader},
+    ];
+    subCols.forEach(h => {
+        ws1[R(2, h.c)] = cell(h.label, fontWh, h.fill, alignCC);
+    });
+
+    // 행 3~: 학생 데이터
     homeroomStudents.forEach((s, idx) => {
         const st = studentStats[s.num];
-        if (!st) return;
+        const row = 3 + idx;
+        const isEven = idx % 2 === 0;
+        const bgNormal = isEven ? white : {patternType:'solid',fgColor:{rgb:'F7F7F7'}};
+
         const 결석계 = Object.values(st.결석).reduce((a,b)=>a+b,0);
         const 지각계 = Object.values(st.지각).reduce((a,b)=>a+b,0);
         const 조퇴계 = Object.values(st.조퇴).reduce((a,b)=>a+b,0);
         const 결과계 = Object.values(st.결과).reduce((a,b)=>a+b,0);
-        rows.push([
-            idx + 1, s.name, totalDays, st.정상출석,
+
+        const isAbsormal정상 = st.정상출석 < totalDays;
+
+        ws1[R(row,0)] = cell(idx+1, fontSm, bgNormal, alignCC);
+        ws1[R(row,1)] = cell(s.name, fontSm, bgNormal, alignLC);
+        ws1[R(row,2)] = cell(totalDays, fontSm, bgNormal, alignCC);
+        ws1[R(row,3)] = cell(st.정상출석, isAbsormal정상?fontRed:fontSm, isAbsormal정상?clrPink:bgNormal, alignCC);
+
+        const vals = [
             st.결석.질병, st.결석.미인정, st.결석.기타, st.결석.인정,
             st.지각.질병, st.지각.미인정, st.지각.기타, st.지각.인정,
             st.조퇴.질병, st.조퇴.미인정, st.조퇴.기타, st.조퇴.인정,
             st.결과.질병, st.결과.미인정, st.결과.기타, st.결과.인정,
-            결석계 || 0, 지각계 || 0, 조퇴계 || 0, 결과계 || 0
-        ]);
+            결석계, 지각계, 조퇴계, 결과계
+        ];
+        vals.forEach((v, i) => {
+            const col = 4 + i;
+            const isTotal = col >= 20;
+            const isNonzero = v > 0;
+            const fillColor = isNonzero ? clrPink : (isTotal ? clrLight : bgNormal);
+            const font = isNonzero ? fontRed : fontSm;
+            ws1[R(row, col)] = cell(v, font, fillColor, alignCC);
+        });
+
+        ws1[R(row,24)] = cell(st.memos.join(' / '), fontSm, bgNormal, alignLC);
     });
 
-    const csv = rows.map(row => row.map(v => `"${String(v).replace(/"/g, '""')}"`).join(',')).join('\n');
-    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `월간출석부_${targetMonth}.csv`;
-    a.click();
-    alert(`✅ ${year}년 ${month}월 월간출석부 CSV를 저장했습니다. (학생 ${homeroomStudents.length}명)`);
+    // 합계 행
+    const sumRow = 3 + homeroomStudents.length;
+    ws1[R(sumRow,0)] = cell('합계', fontBk, clrLight, alignCC);
+    ws1[R(sumRow,1)] = cell('', fontBk, clrLight, alignCC);
+    ws1[R(sumRow,2)] = cell('', fontBk, clrLight, alignCC);
+    ws1[R(sumRow,3)] = cell('', fontBk, clrLight, alignCC);
+    for (let col=4; col<=23; col++) {
+        const sum = homeroomStudents.reduce((acc, s) => {
+            const st = studentStats[s.num];
+            const valMap = [
+                st.결석.질병,st.결석.미인정,st.결석.기타,st.결석.인정,
+                st.지각.질병,st.지각.미인정,st.지각.기타,st.지각.인정,
+                st.조퇴.질병,st.조퇴.미인정,st.조퇴.기타,st.조퇴.인정,
+                st.결과.질병,st.결과.미인정,st.결과.기타,st.결과.인정,
+                Object.values(st.결석).reduce((a,b)=>a+b,0),
+                Object.values(st.지각).reduce((a,b)=>a+b,0),
+                Object.values(st.조퇴).reduce((a,b)=>a+b,0),
+                Object.values(st.결과).reduce((a,b)=>a+b,0),
+            ];
+            return acc + (valMap[col-4] || 0);
+        }, 0);
+        ws1[R(sumRow,col)] = cell(sum, sum>0?fontRed:fontBk, sum>0?clrPink:clrLight, alignCC);
+    }
+    ws1[R(sumRow,24)] = cell('', fontBk, clrLight, alignCC);
+
+    // 병합 설정
+    ws1['!merges'] = [
+        // 타이틀 전체 병합
+        {s:{r:0,c:0}, e:{r:0,c:24}},
+        // 대분류 고정 열들은 2행 병합
+        {s:{r:1,c:0},e:{r:2,c:0}},
+        {s:{r:1,c:1},e:{r:2,c:1}},
+        {s:{r:1,c:2},e:{r:2,c:2}},
+        {s:{r:1,c:3},e:{r:2,c:3}},
+        {s:{r:1,c:20},e:{r:2,c:20}},
+        {s:{r:1,c:21},e:{r:2,c:21}},
+        {s:{r:1,c:22},e:{r:2,c:22}},
+        {s:{r:1,c:23},e:{r:2,c:23}},
+        {s:{r:1,c:24},e:{r:2,c:24}},
+        // 대분류 4열 병합
+        {s:{r:1,c:4},e:{r:1,c:7}},
+        {s:{r:1,c:8},e:{r:1,c:11}},
+        {s:{r:1,c:12},e:{r:1,c:15}},
+        {s:{r:1,c:16},e:{r:1,c:19}},
+        // 합계 행 앞 4열 병합
+        {s:{r:sumRow,c:0},e:{r:sumRow,c:3}},
+    ];
+
+    // 열 너비 설정
+    ws1['!cols'] = [
+        {wch:6},  // 학생코드
+        {wch:8},  // 성명
+        {wch:5},  // 수업일수
+        {wch:5},  // 정상출석
+        {wch:5},{wch:6},{wch:5},{wch:5}, // 결석4
+        {wch:5},{wch:6},{wch:5},{wch:5}, // 지각4
+        {wch:5},{wch:6},{wch:5},{wch:5}, // 조퇴4
+        {wch:5},{wch:6},{wch:5},{wch:5}, // 결과4
+        {wch:5},{wch:5},{wch:5},{wch:5}, // 총계4
+        {wch:20}, // 비고
+    ];
+
+    // 행 높이
+    ws1['!rows'] = [
+        {hpt:20}, // 타이틀
+        {hpt:28}, // 대분류
+        {hpt:20}, // 소분류
+        ...homeroomStudents.map(() => ({hpt:16})),
+        {hpt:18}, // 합계
+    ];
+
+    ws1['!ref'] = XLSX.utils.encode_range({s:{r:0,c:0}, e:{r:sumRow, c:24}});
+    XLSX.utils.book_append_sheet(wb, ws1, '월간출석부');
+
+    // ════════════════════════════════════════════
+    // 시트2: 상세 데이터 (기존 방식)
+    // ════════════════════════════════════════════
+    const sheet2Data = [
+        [`월간출석부 상세 (${rangeLabel})`],
+        [],
+        ['학생번호','성명','수업일수','정상출석',
+         '결석_질병','결석_미인정','결석_기타','결석_인정',
+         '지각_질병','지각_미인정','지각_기타','지각_인정',
+         '조퇴_질병','조퇴_미인정','조퇴_기타','조퇴_인정',
+         '결과_질병','결과_미인정','결과_기타','결과_인정',
+         '결석총계','지각총계','조퇴총계','결과총계','비고'],
+    ];
+    homeroomStudents.forEach((s, idx) => {
+        const st = studentStats[s.num];
+        const 결석계 = Object.values(st.결석).reduce((a,b)=>a+b,0);
+        const 지각계 = Object.values(st.지각).reduce((a,b)=>a+b,0);
+        const 조퇴계 = Object.values(st.조퇴).reduce((a,b)=>a+b,0);
+        const 결과계 = Object.values(st.결과).reduce((a,b)=>a+b,0);
+        sheet2Data.push([
+            idx+1, s.name, totalDays, st.정상출석,
+            st.결석.질병,st.결석.미인정,st.결석.기타,st.결석.인정,
+            st.지각.질병,st.지각.미인정,st.지각.기타,st.지각.인정,
+            st.조퇴.질병,st.조퇴.미인정,st.조퇴.기타,st.조퇴.인정,
+            st.결과.질병,st.결과.미인정,st.결과.기타,st.결과.인정,
+            결석계,지각계,조퇴계,결과계,
+            st.memos.join(' / ')
+        ]);
+    });
+    const ws2 = XLSX.utils.aoa_to_sheet(sheet2Data);
+    ws2['!cols'] = [{wch:8},{wch:8},{wch:7},{wch:7},
+        ...Array(16).fill({wch:7}),
+        {wch:7},{wch:7},{wch:7},{wch:7},{wch:25}];
+    XLSX.utils.book_append_sheet(wb, ws2, '상세데이터');
+
+    // ── 다운로드 ──
+    const safeLabel = rangeLabel.replace(/[~\s]/g, '_').replace(/[년월일]/g, '');
+    XLSX.writeFile(wb, `월간출석부_${safeLabel}.xlsx`);
+    alert(`✅ 출결 엑셀 저장 완료! (${rangeLabel})\n시트1: 출석부 (색상 표)\n시트2: 상세 데이터`);
 }
 
 // ───── 월간 통계 ─────────────────────────────────────────
@@ -2451,7 +3522,98 @@ init();
 </script>
 
 
+<script id="__embedded_attendance_data__" type="application/json">{"db":[{"id":1777350750781.3965,"name":"305 미적","time":"월1 수2 금2","teacher":"이화익","students":[{"num":"30319","name":"최예진","phone":"","guardian":""},{"num":"30321","name":"한지원","phone":"","guardian":""},{"num":"30406","name":"류다윤","phone":"","guardian":""},{"num":"30510","name":"심지후","phone":"","guardian":""},{"num":"30517","name":"김서연","phone":"","guardian":""},{"num":"30519","name":"김아린","phone":"","guardian":""},{"num":"30521","name":"백예슬","phone":"","guardian":""},{"num":"30522","name":"서지민","phone":"","guardian":""},{"num":"30523","name":"용왕은","phone":"","guardian":""},{"num":"30524","name":"이예은","phone":"","guardian":""},{"num":"30526","name":"정현희","phone":"","guardian":""},{"num":"30615","name":"강효리","phone":"","guardian":""},{"num":"30627","name":"황정원","phone":"","guardian":""},{"num":"30712","name":"정소율","phone":"","guardian":""},{"num":"30716","name":"김민선","phone":"","guardian":""},{"num":"30720","name":"원다연","phone":"","guardian":""},{"num":"30721","name":"유시하","phone":"","guardian":""},{"num":"30722","name":"이승주","phone":"","guardian":""},{"num":"30723","name":"이태희","phone":"","guardian":""},{"num":"30726","name":"정서윤","phone":"","guardian":""},{"num":"30806","name":"박다인","phone":"","guardian":""},{"num":"30807","name":"박서빈","phone":"","guardian":""},{"num":"30810","name":"이하진","phone":"","guardian":""},{"num":"30813","name":"한유주","phone":"","guardian":""},{"num":"30816","name":"김수은","phone":"","guardian":""},{"num":"30817","name":"김영은","phone":"","guardian":""},{"num":"30818","name":"김예주","phone":"","guardian":""},{"num":"30823","name":"이소이","phone":"","guardian":""},{"num":"30825","name":"조예준","phone":"","guardian":""}]},{"id":1777350750781.358,"name":"308 자율","time":"월6","teacher":"이화익","students":[{"num":"30801","name":"고서진","phone":"","guardian":""},{"num":"30802","name":"김민지","phone":"","guardian":""},{"num":"30803","name":"김예림","phone":"","guardian":""},{"num":"30804","name":"김유림","phone":"","guardian":""},{"num":"30805","name":"김지연","phone":"","guardian":""},{"num":"30806","name":"박다인","phone":"","guardian":""},{"num":"30807","name":"박서빈","phone":"","guardian":""},{"num":"30808","name":"송예은","phone":"","guardian":""},{"num":"30809","name":"이채원","phone":"","guardian":""},{"num":"30810","name":"이하진","phone":"","guardian":""},{"num":"30811","name":"지연주","phone":"","guardian":""},{"num":"30812","name":"최선영","phone":"","guardian":""},{"num":"30813","name":"한유주","phone":"","guardian":""},{"num":"30814","name":"강서인","phone":"","guardian":""},{"num":"30815","name":"김민서","phone":"","guardian":""},{"num":"30816","name":"김수은","phone":"","guardian":""},{"num":"30817","name":"김영은","phone":"","guardian":""},{"num":"30818","name":"김예주","phone":"","guardian":""},{"num":"30819","name":"박선아","phone":"","guardian":""},{"num":"30820","name":"안해랑","phone":"","guardian":""},{"num":"30821","name":"유수담","phone":"","guardian":""},{"num":"30822","name":"이서현","phone":"","guardian":""},{"num":"30823","name":"이소이","phone":"","guardian":""},{"num":"30824","name":"이하영","phone":"","guardian":""},{"num":"30825","name":"조예준","phone":"","guardian":""},{"num":"30826","name":"최유빈","phone":"","guardian":""}]},{"id":1777350750781.2483,"name":"306 미적","time":"월7 화3 목2","teacher":"이화익","students":[{"num":"30305","name":"연태린","phone":"","guardian":""},{"num":"30308","name":"이채윤","phone":"","guardian":""},{"num":"30414","name":"이은재","phone":"","guardian":""},{"num":"30424","name":"이서윤","phone":"","guardian":""},{"num":"30425","name":"이수빈","phone":"","guardian":""},{"num":"30426","name":"조윤주","phone":"","guardian":""},{"num":"30501","name":"곽서윤","phone":"","guardian":""},{"num":"30506","name":"김지원","phone":"","guardian":""},{"num":"30507","name":"김태희","phone":"","guardian":""},{"num":"30508","name":"류해인","phone":"","guardian":""},{"num":"30515","name":"하정인","phone":"","guardian":""},{"num":"30520","name":"김효선","phone":"","guardian":""},{"num":"30525","name":"이윤지","phone":"","guardian":""},{"num":"30601","name":"김고은","phone":"","guardian":""},{"num":"30602","name":"김소현","phone":"","guardian":""},{"num":"30611","name":"우다윤","phone":"","guardian":""},{"num":"30612","name":"윤송이","phone":"","guardian":""},{"num":"30616","name":"김민아","phone":"","guardian":""},{"num":"30617","name":"김민하","phone":"","guardian":""},{"num":"30618","name":"김세이","phone":"","guardian":""},{"num":"30621","name":"신효정","phone":"","guardian":""},{"num":"30622","name":"이소정","phone":"","guardian":""},{"num":"30624","name":"조보경","phone":"","guardian":""},{"num":"30707","name":"박정서","phone":"","guardian":""},{"num":"30714","name":"강예서","phone":"","guardian":""},{"num":"30724","name":"전예린","phone":"","guardian":""},{"num":"30801","name":"고서진","phone":"","guardian":""},{"num":"30804","name":"김유림","phone":"","guardian":""},{"num":"30814","name":"강서인","phone":"","guardian":""},{"num":"30815","name":"김민서","phone":"","guardian":""}]},{"id":1777350750781.5667,"name":"305 자율","time":"화1","teacher":"이화익","students":[{"num":"30501","name":"곽서윤","phone":"","guardian":""},{"num":"30502","name":"김나윤","phone":"","guardian":""},{"num":"30503","name":"김민아","phone":"","guardian":""},{"num":"30504","name":"김민지","phone":"","guardian":""},{"num":"30505","name":"김은선","phone":"","guardian":""},{"num":"30506","name":"김지원","phone":"","guardian":""},{"num":"30507","name":"김태희","phone":"","guardian":""},{"num":"30508","name":"류해인","phone":"","guardian":""},{"num":"30509","name":"박예슬","phone":"","guardian":""},{"num":"30510","name":"심지후","phone":"","guardian":""},{"num":"30511","name":"이윤서","phone":"","guardian":""},{"num":"30512","name":"이지우","phone":"","guardian":""},{"num":"30513","name":"이채원","phone":"","guardian":""},{"num":"30514","name":"최서은","phone":"","guardian":""},{"num":"30515","name":"하정인","phone":"","guardian":""},{"num":"30516","name":"홍솔비","phone":"","guardian":""},{"num":"30517","name":"김서연","phone":"","guardian":""},{"num":"30518","name":"김서영","phone":"","guardian":""},{"num":"30519","name":"김아린","phone":"","guardian":""},{"num":"30520","name":"김효선","phone":"","guardian":""},{"num":"30521","name":"백예슬","phone":"","guardian":""},{"num":"30522","name":"서지민","phone":"","guardian":""},{"num":"30523","name":"용왕은","phone":"","guardian":""},{"num":"30524","name":"이예은","phone":"","guardian":""},{"num":"30525","name":"이윤지","phone":"","guardian":""},{"num":"30526","name":"정현희","phone":"","guardian":""},{"num":"30527","name":"조희진","phone":"","guardian":""}]},{"id":1777350750781.6013,"name":"304 자율","time":"화2","teacher":"이화익","students":[{"num":"30401","name":"강지안","phone":"","guardian":""},{"num":"30402","name":"김가은","phone":"","guardian":""},{"num":"30403","name":"김민서","phone":"","guardian":""},{"num":"30404","name":"김수민","phone":"","guardian":""},{"num":"30405","name":"김주은","phone":"","guardian":""},{"num":"30406","name":"류다윤","phone":"","guardian":""},{"num":"30407","name":"박소연","phone":"","guardian":""},{"num":"30408","name":"배지현","phone":"","guardian":""},{"num":"30409","name":"송지현","phone":"","guardian":""},{"num":"30410","name":"안수진","phone":"","guardian":""},{"num":"30411","name":"이나경","phone":"","guardian":""},{"num":"30412","name":"이라현","phone":"","guardian":""},{"num":"30413","name":"이수아","phone":"","guardian":""},{"num":"30414","name":"이은재","phone":"","guardian":""},{"num":"30415","name":"이지윤","phone":"","guardian":""},{"num":"30416","name":"전이현","phone":"","guardian":""},{"num":"30417","name":"정다현","phone":"","guardian":""},{"num":"30418","name":"정예은","phone":"","guardian":""},{"num":"30419","name":"김규린","phone":"","guardian":""},{"num":"30420","name":"김하윤","phone":"","guardian":""},{"num":"30421","name":"박주현","phone":"","guardian":""},{"num":"30422","name":"송화연","phone":"","guardian":""},{"num":"30423","name":"신서영","phone":"","guardian":""},{"num":"30424","name":"이서윤","phone":"","guardian":""},{"num":"30425","name":"이수빈","phone":"","guardian":""},{"num":"30426","name":"조윤주","phone":"","guardian":""},{"num":"30427","name":"조혜빈","phone":"","guardian":""}]},{"id":1777350750781.7712,"name":"301 경수","time":"화6 수4 목6","teacher":"이화익","students":[{"num":"30118","name":"박소연","phone":"","guardian":""},{"num":"30122","name":"손예린","phone":"","guardian":""},{"num":"30210","name":"이현영","phone":"","guardian":""},{"num":"30220","name":"송수빈","phone":"","guardian":""},{"num":"30311","name":"고은","phone":"","guardian":""},{"num":"30312","name":"김주아","phone":"","guardian":""},{"num":"30320","name":"최주영","phone":"","guardian":""},{"num":"30427","name":"조혜빈","phone":"","guardian":""},{"num":"30609","name":"신하율","phone":"","guardian":""},{"num":"30711","name":"이채원","phone":"","guardian":""},{"num":"30719","name":"석지우","phone":"","guardian":""},{"num":"30810","name":"이하진","phone":"","guardian":""},{"num":"30826","name":"최유빈","phone":"","guardian":""}]},{"id":1777350750781.9214,"name":"306 자율","time":"목3","teacher":"이화익","students":[{"num":"30601","name":"김고은","phone":"","guardian":""},{"num":"30602","name":"김소현","phone":"","guardian":""},{"num":"30603","name":"김희수","phone":"","guardian":""},{"num":"30604","name":"남유나","phone":"","guardian":""},{"num":"30605","name":"민하랑","phone":"","guardian":""},{"num":"30606","name":"박유주","phone":"","guardian":""},{"num":"30607","name":"손혜지","phone":"","guardian":""},{"num":"30608","name":"신수빈","phone":"","guardian":""},{"num":"30609","name":"신하율","phone":"","guardian":""},{"num":"30610","name":"안사랑","phone":"","guardian":""},{"num":"30611","name":"우다윤","phone":"","guardian":""},{"num":"30612","name":"윤송이","phone":"","guardian":""},{"num":"30613","name":"이채원","phone":"","guardian":""},{"num":"30614","name":"지용아","phone":"","guardian":""},{"num":"30615","name":"강효리","phone":"","guardian":""},{"num":"30616","name":"김민아","phone":"","guardian":""},{"num":"30617","name":"김민하","phone":"","guardian":""},{"num":"30618","name":"김세이","phone":"","guardian":""},{"num":"30619","name":"김하람","phone":"","guardian":""},{"num":"30620","name":"송서혜","phone":"","guardian":""},{"num":"30621","name":"신효정","phone":"","guardian":""},{"num":"30622","name":"이소정","phone":"","guardian":""},{"num":"30623","name":"이주은","phone":"","guardian":""},{"num":"30624","name":"조보경","phone":"","guardian":""},{"num":"30625","name":"한윤지","phone":"","guardian":""},{"num":"30626","name":"현나경","phone":"","guardian":""},{"num":"30627","name":"황정원","phone":"","guardian":""}]},{"id":1777350750781.0415,"name":"302 자율","time":"목7","teacher":"이화익","students":[{"num":"30201","name":"김서형","phone":"","guardian":""},{"num":"30202","name":"김예빈","phone":"","guardian":""},{"num":"30203","name":"김재현","phone":"","guardian":""},{"num":"30204","name":"김정수","phone":"","guardian":""},{"num":"30205","name":"김지윤","phone":"","guardian":""},{"num":"30206","name":"남유미","phone":"","guardian":""},{"num":"30207","name":"문송현","phone":"","guardian":""},{"num":"30208","name":"서혜윤","phone":"","guardian":""},{"num":"30209","name":"윤혜인","phone":"","guardian":""},{"num":"30210","name":"이현영","phone":"","guardian":""},{"num":"30211","name":"장다연","phone":"","guardian":""},{"num":"30212","name":"정루나","phone":"","guardian":""},{"num":"30213","name":"정문경","phone":"","guardian":""},{"num":"30214","name":"정민영","phone":"","guardian":""},{"num":"30215","name":"정유진","phone":"","guardian":""},{"num":"30216","name":"김륜형","phone":"","guardian":""},{"num":"30217","name":"김보경","phone":"","guardian":""},{"num":"30218","name":"박은별","phone":"","guardian":""},{"num":"30219","name":"박주은","phone":"","guardian":""},{"num":"30220","name":"송수빈","phone":"","guardian":""},{"num":"30221","name":"심지윤","phone":"","guardian":""},{"num":"30222","name":"이고경","phone":"","guardian":""},{"num":"30223","name":"이주원","phone":"","guardian":""},{"num":"30224","name":"이지소","phone":"","guardian":""},{"num":"30225","name":"조희원","phone":"","guardian":""},{"num":"30226","name":"채승연","phone":"","guardian":""}]},{"id":1777350750781.4248,"name":"303 자율","time":"금6","teacher":"이화익","students":[{"num":"30301","name":"김서현","phone":"","guardian":""},{"num":"30302","name":"도승연","phone":"","guardian":""},{"num":"30303","name":"문승아","phone":"","guardian":""},{"num":"30304","name":"박수아","phone":"","guardian":""},{"num":"30305","name":"연태린","phone":"","guardian":""},{"num":"30306","name":"오가은","phone":"","guardian":""},{"num":"30307","name":"윤세비","phone":"","guardian":""},{"num":"30308","name":"이채윤","phone":"","guardian":""},{"num":"30309","name":"정예원","phone":"","guardian":""},{"num":"30310","name":"조보경","phone":"","guardian":""},{"num":"30311","name":"고은","phone":"","guardian":""},{"num":"30312","name":"김주아","phone":"","guardian":""},{"num":"30313","name":"송민지","phone":"","guardian":""},{"num":"30314","name":"염채빈","phone":"","guardian":""},{"num":"30315","name":"이성지","phone":"","guardian":""},{"num":"30316","name":"이수인","phone":"","guardian":""},{"num":"30317","name":"이승현","phone":"","guardian":""},{"num":"30318","name":"장신영","phone":"","guardian":""},{"num":"30319","name":"최예진","phone":"","guardian":""},{"num":"30320","name":"최주영","phone":"","guardian":""},{"num":"30321","name":"한지원","phone":"","guardian":""},{"num":"30322","name":"김해윤","phone":"","guardian":""},{"num":"30323","name":"박초원","phone":"","guardian":""},{"num":"30324","name":"이소윤","phone":"","guardian":""},{"num":"30325","name":"임하민","phone":"","guardian":""},{"num":"30326","name":"최다연","phone":"","guardian":""}]}],"taskChecks":{},"attRecord":{"2026-04-28":{"homeroom_AM":{"30811":{"type":"결석","reason":"인정"}}}},"phoneBook":{"homeroom_AM":{"30801":{"student":"010-6278-9118","guardian":"010-2242-9118"},"30802":{"student":"010-5133-9297","guardian":"010-8633-9297"},"30803":{"student":"010-2276-0901","guardian":"010-7742-4785"},"30804":{"student":"010-8841-8102","guardian":"010-2896-2975"},"30805":{"student":"010-3080-1431","guardian":"010-4324-1431"},"30806":{"student":"010-5721-3808","guardian":"010-9040-3808"},"30807":{"student":"010-4140-8533","guardian":"010-5178-8533"},"30808":{"student":"010-5319-0668","guardian":"010-9201-0433"},"30809":{"student":"010-7638-7217","guardian":"010-3764-7216"},"30810":{"student":"010-6259-1372","guardian":"010-2168-1442"},"30811":{"student":"010-7303-7501","guardian":"010-3167-7501"},"30812":{"student":"010-3746-3658","guardian":"010-9205-0308"},"30813":{"student":"010-8998-8091","guardian":"010-7207-8091"},"30814":{"student":"010-6205-0230","guardian":"010-8750-8544"},"30815":{"student":"010-3169-9164","guardian":"010-9474-2728"},"30816":{"student":"010-8927-3559","guardian":"010-8911-3559"},"30817":{"student":"010-2196-6264","guardian":"010-3814-1787"},"30818":{"student":"010-2421-6897","guardian":"010-5126-6897"},"30819":{"student":"010-2489-4871","guardian":"010-5289-4871"},"30820":{"student":"010-9061-4962","guardian":"010-3060-4962"},"30821":{"student":"010-5215-9269","guardian":"010-5211-9717"},"30822":{"student":"010-7524-9631","guardian":"010-4187-9631"},"30823":{"student":"010-8363-7917","guardian":"010-7233-1223"},"30824":{"student":"010-4678-5268","guardian":"010-5244-3336"},"30825":{"student":"010-4854-2697","guardian":"010-4849-2697"},"30826":{"student":"010-7159-9442","guardian":"010-7932-9442"}},"homeroom_PM":{"30801":{"student":"010-6278-9118","guardian":"010-2242-9118"},"30802":{"student":"010-5133-9297","guardian":"010-8633-9297"},"30803":{"student":"010-2276-0901","guardian":"010-7742-4785"},"30804":{"student":"010-8841-8102","guardian":"010-2896-2975"},"30805":{"student":"010-3080-1431","guardian":"010-4324-1431"},"30806":{"student":"010-5721-3808","guardian":"010-9040-3808"},"30807":{"student":"010-4140-8533","guardian":"010-5178-8533"},"30808":{"student":"010-5319-0668","guardian":"010-9201-0433"},"30809":{"student":"010-7638-7217","guardian":"010-3764-7216"},"30810":{"student":"010-6259-1372","guardian":"010-2168-1442"},"30811":{"student":"010-7303-7501","guardian":"010-3167-7501"},"30812":{"student":"010-3746-3658","guardian":"010-9205-0308"},"30813":{"student":"010-8998-8091","guardian":"010-7207-8091"},"30814":{"student":"010-6205-0230","guardian":"010-8750-8544"},"30815":{"student":"010-3169-9164","guardian":"010-9474-2728"},"30816":{"student":"010-8927-3559","guardian":"010-8911-3559"},"30817":{"student":"010-2196-6264","guardian":"010-3814-1787"},"30818":{"student":"010-2421-6897","guardian":"010-5126-6897"},"30819":{"student":"010-2489-4871","guardian":"010-5289-4871"},"30820":{"student":"010-9061-4962","guardian":"010-3060-4962"},"30821":{"student":"010-5215-9269","guardian":"010-5211-9717"},"30822":{"student":"010-7524-9631","guardian":"010-4187-9631"},"30823":{"student":"010-8363-7917","guardian":"010-7233-1223"},"30824":{"student":"010-4678-5268","guardian":"010-5244-3336"},"30825":{"student":"010-4854-2697","guardian":"010-4849-2697"},"30826":{"student":"010-7159-9442","guardian":"010-7932-9442"}}},"homeroomStudents":[{"num":"30801","name":"고서진","phone":"010-6278-9118","guardian":"010-2242-9118"},{"num":"30802","name":"김민지","phone":"010-5133-9297","guardian":"010-8633-9297"},{"num":"30803","name":"김예림","phone":"010-2276-0901","guardian":"010-7742-4785"},{"num":"30804","name":"김유림","phone":"010-8841-8102","guardian":"010-2896-2975"},{"num":"30805","name":"김지연","phone":"010-3080-1431","guardian":"010-4324-1431"},{"num":"30806","name":"박다인","phone":"010-5721-3808","guardian":"010-9040-3808"},{"num":"30807","name":"박서빈","phone":"010-4140-8533","guardian":"010-5178-8533"},{"num":"30808","name":"송예은","phone":"010-5319-0668","guardian":"010-9201-0433"},{"num":"30809","name":"이채원","phone":"010-7638-7217","guardian":"010-3764-7216"},{"num":"30810","name":"이하진","phone":"010-6259-1372","guardian":"010-2168-1442"},{"num":"30811","name":"지연주","phone":"010-7303-7501","guardian":"010-3167-7501"},{"num":"30812","name":"최선영","phone":"010-3746-3658","guardian":"010-9205-0308"},{"num":"30813","name":"한유주","phone":"010-8998-8091","guardian":"010-7207-8091"},{"num":"30814","name":"강서인","phone":"010-6205-0230","guardian":"010-8750-8544"},{"num":"30815","name":"김민서","phone":"010-3169-9164","guardian":"010-9474-2728"},{"num":"30816","name":"김수은","phone":"010-8927-3559","guardian":"010-8911-3559"},{"num":"30817","name":"김영은","phone":"010-2196-6264","guardian":"010-3814-1787"},{"num":"30818","name":"김예주","phone":"010-2421-6897","guardian":"010-5126-6897"},{"num":"30819","name":"박선아","phone":"010-2489-4871","guardian":"010-5289-4871"},{"num":"30820","name":"안해랑","phone":"010-9061-4962","guardian":"010-3060-4962"},{"num":"30821","name":"유수담","phone":"010-5215-9269","guardian":"010-5211-9717"},{"num":"30822","name":"이서현","phone":"010-7524-9631","guardian":"010-4187-9631"},{"num":"30823","name":"이소이","phone":"010-8363-7917","guardian":"010-7233-1223"},{"num":"30824","name":"이하영","phone":"010-4678-5268","guardian":"010-5244-3336"},{"num":"30825","name":"조예준","phone":"010-4854-2697","guardian":"010-4849-2697"},{"num":"30826","name":"최유빈","phone":"010-7159-9442","guardian":"010-7932-9442"}],"xlsxTimetable":[{"name":"류성일","classes":[{"room":"108","subject":"국","times":["월1","금7"]},{"room":"107","subject":"국","times":["월3","화6"]},{"room":"102","subject":"국","times":["월5","목5"]},{"room":"105","subject":"국","times":["월6","금3"]},{"room":"101","subject":"국","times":["화1","목3"]},{"room":"106","subject":"국","times":["화3","금6"]},{"room":"103","subject":"국","times":["화4","목1"]},{"room":"104","subject":"국","times":["수2","목6"]}]},{"name":"김지혜","classes":[{"room":"106","subject":"국","times":["월2","수3"]},{"room":"101","subject":"국","times":["월4","목6"]},{"room":"104","subject":"국","times":["월6","금1"]},{"room":"105","subject":"국","times":["월7","목5"]},{"room":"108","subject":"국","times":["화1","목3"]},{"room":"103","subject":"국","times":["화3","목2"]},{"room":"102","subject":"국","times":["화4","금4"]},{"room":"107","subject":"국","times":["화7","금2"]}]},{"name":"유영순","classes":[{"room":"208","subject":"문","times":["월1","목4"]},{"room":"207","subject":"문","times":["월2","목5"]},{"room":"204","subject":"문","times":["월4","금6"]},{"room":"202","subject":"문","times":["월7","화4"]},{"room":"206","subject":"문","times":["화5","수4"]},{"room":"201","subject":"문","times":["화7","목3"]},{"room":"205","subject":"문","times":["수1","금7"]},{"room":"203","subject":"문","times":["수2","금2"]}]},{"name":"장혜원","classes":[{"room":"203","subject":"문","times":["월2"]},{"room":"204","subject":"문","times":["월3"]},{"room":"201","subject":"주독","times":["월5","목6","금4"]},{"room":"206","subject":"주독","times":["월6","화6","목7"]},{"room":"207","subject":"주독","times":["화1","목1","금1"]},{"room":"208","subject":"주독","times":["화2","목2","금3"]},{"room":"202","subject":"문","times":["화5"]},{"room":"201","subject":"문","times":["수3"]}]},{"name":"전소정","classes":[{"room":"304","subject":"독","times":["월2"]},{"room":"301","subject":"화작","times":["월4","화7","수1"]},{"room":"302","subject":"화작","times":["월5","화4","목5"]},{"room":"303","subject":"화작","times":["월7","화3","목2"]},{"room":"304","subject":"화작","times":["화6","수4","목6"]},{"room":"303","subject":"독","times":["목3"]},{"room":"307","subject":"교육","times":["금3","금4"]}]},{"name":"배상준","classes":[{"room":"308","subject":"언매","times":["월1","수2","금2"]},{"room":"305","subject":"언매","times":["월4","화7","수1"]},{"room":"306","subject":"언매","times":["월5","화4","목5"]},{"room":"307","subject":"언매","times":["화6","수4","목6"]}]},{"name":"장수진","classes":[{"room":"307","subject":"독","times":["월2","목7","금6"]},{"room":"305","subject":"독","times":["월3"]},{"room":"306","subject":"독","times":["월6","화2","목4"]},{"room":"206","subject":"문","times":["월7"]},{"room":"205","subject":"문","times":["화3"]},{"room":"308","subject":"독","times":["화5","목3","금1"]},{"room":"208","subject":"문","times":["화7"]},{"room":"207","subject":"문","times":["수3"]},{"room":"302","subject":"독","times":["금3"]},{"room":"301","subject":"독","times":["금4"]}]},{"name":"이정선","classes":[{"room":"303","subject":"독","times":["월2","화1"]},{"room":"301","subject":"독","times":["월3","금6"]},{"room":"302","subject":"독","times":["화2","금4"]},{"room":"304","subject":"독","times":["화5","목3"]},{"room":"302","subject":"고전","times":["수3","목1","금7"]},{"room":"305","subject":"독","times":["목4","금1"]}]},{"name":"노현경","classes":[{"room":"101","subject":"공수","times":["월1","화4","목2","금4"]},{"room":"105","subject":"공수","times":["월3","화7","수3","목4"]},{"room":"103","subject":"공수","times":["월4","화5","수1","목6"]},{"room":"107","subject":"공수","times":["월6","화1","목7","금6"]}]},{"name":"송신영","classes":[{"room":"106","subject":"공수","times":["월1","화2","목2","금4"]},{"room":"104","subject":"공수","times":["월3","화3","수3","목7"]},{"room":"108","subject":"공수","times":["월5","화6","수2","목6"]},{"room":"102","subject":"공수","times":["월6","화5","목4","금1"]}]},{"name":"김은영","classes":[{"room":"206","subject":"대수","times":["월2","수2","목3","금2"]},{"room":"205","subject":"대수","times":["월3","화4","수4","금6"]},{"room":"203","subject":"대수","times":["월4","수1","목5","금7"]},{"room":"204","subject":"대수","times":["월7","화7","수3","목4"]}]},{"name":"이화익","classes":[{"room":"305","subject":"미적","times":["월1","수2","금2"]},{"room":"308","subject":"자율","times":["월6"]},{"room":"306","subject":"미적","times":["월7","화3","목2"]},{"room":"305","subject":"자율","times":["화1"]},{"room":"304","subject":"자율","times":["화2"]},{"room":"309","subject":"경수","times":["화6","수4","목6"]},{"room":"306","subject":"자율","times":["목3"]},{"room":"302","subject":"자율","times":["목7"]},{"room":"303","subject":"자율","times":["금6"]}]},{"name":"박성진","classes":[{"room":"307","subject":"확통","times":["월1","수2","금2"]},{"room":"302","subject":"확통","times":["월4","화7","수1"]},{"room":"303","subject":"확통","times":["월5","화4","목5"]},{"room":"305","subject":"확통","times":["화6","수4","목6"]},{"room":"308","subject":"확통","times":["수3","목1","금7"]},{"room":"307","subject":"자율","times":["목3"]}]},{"name":"김인경","classes":[{"room":"202","subject":"대수","times":["월1","화3","수2","금7"]},{"room":"201","subject":"대수","times":["월3","화5","수1","목4"]},{"room":"202","subject":"기하","times":["월5","목6","금4"]},{"room":"301","subject":"진로","times":["월6"]},{"room":"201","subject":"기하","times":["화2","목2","금3"]}]},{"name":"채민석","classes":[{"room":"207","subject":"대수","times":["월1","화4","수4","금2"]},{"room":"208","subject":"대수","times":["월2","화5","수2","금6"]},{"room":"306","subject":"확통","times":["월4","화7","수1"]},{"room":"301","subject":"확통","times":["월7","화3","목2"]},{"room":"301","subject":"자율","times":["목4"]}]},{"name":"이광근","classes":[{"room":"302","subject":"영독","times":["월2","화5"]},{"room":"308","subject":"영독","times":["월3","목7"]},{"room":"307","subject":"영독","times":["월6","금1"]},{"room":"306","subject":"영독","times":["화1","금6"]},{"room":"301","subject":"영독","times":["화2","금3"]}]},{"name":"김도희","classes":[{"room":"305","subject":"영독","times":["월2","목7"]},{"room":"304","subject":"진영","times":["월4","화7","수1"]},{"room":"304","subject":"영독","times":["월6","목4"]},{"room":"303","subject":"영독","times":["화2","금1"]},{"room":"306","subject":"영문","times":["화6","수4","목6"]},{"room":"307","subject":"영문","times":["수3","목1","금7"]}]},{"name":"박혜경","classes":[{"room":"204","subject":"영","times":["월1","금2"]},{"room":"203","subject":"영","times":["월3","목4"]},{"room":"208","subject":"영","times":["월4","금7"]},{"room":"207","subject":"영","times":["월7","금6"]},{"room":"201","subject":"영","times":["화3","목5"]},{"room":"206","subject":"영","times":["화4","수1"]},{"room":"202","subject":"영","times":["화7","수4"]},{"room":"205","subject":"영","times":["수2","목3"]}]},{"name":"문매리","classes":[{"room":"107","subject":"공","times":["월2","목4"]},{"room":"104","subject":"공","times":["월4","금7"]},{"room":"103","subject":"공","times":["월5","화6"]},{"room":"108","subject":"공","times":["월7","목7"]},{"room":"105","subject":"공","times":["화1","목3"]},{"room":"102","subject":"공","times":["화3","목1"]},{"room":"106","subject":"공","times":["화5","금2"]},{"room":"101","subject":"공","times":["수3","금3"]}]},{"name":"김한영","classes":[{"room":"207","subject":"영","times":["수1"]},{"room":"204","subject":"영","times":["수2"]},{"room":"203","subject":"영","times":["수3"]},{"room":"201","subject":"영","times":["수4"]},{"room":"202","subject":"영","times":["목3"]},{"room":"205","subject":"영","times":["목4"]},{"room":"206","subject":"영","times":["목5"]},{"room":"208","subject":"영","times":["금2"]}]},{"name":"김은지","classes":[{"room":"108","subject":"공","times":["월4","금3"]},{"room":"106","subject":"공","times":["월6","금1"]},{"room":"101","subject":"공","times":["월7","금7"]},{"room":"102","subject":"공","times":["화2","금6"]},{"room":"105","subject":"공","times":["화5","수2"]},{"room":"104","subject":"공","times":["화6","목4"]},{"room":"107","subject":"공","times":["수1","목1"]},{"room":"103","subject":"공","times":["수4","목5"]}]},{"name":"송준영","classes":[{"room":"303","subject":"영문","times":["월4","화7","수1"]},{"room":"203","subject":"영토","times":["월5","목6","금4"]},{"room":"305","subject":"영문","times":["월7","화3","목2"]},{"room":"208","subject":"영토","times":["화1","목1","금1"]}]},{"name":"박상준","classes":[{"room":"103","subject":"한사","times":["월3","수3","금6"]},{"room":"307","subject":"동사","times":["월5","화4","목5"]},{"room":"101","subject":"한사","times":["월6","화3","금2"]},{"room":"102","subject":"한사","times":["화1","수4","목3"]},{"room":"104","subject":"한사","times":["화7","목2","금4"]},{"room":"303","subject":"탐","times":["목6"]}]},{"name":"이하영","classes":[{"room":"105","subject":"한사","times":["월1","목2","금1"]},{"room":"108","subject":"한사","times":["월2","화4","금2"]},{"room":"208","subject":"세사","times":["월6","화6","목7"]},{"room":"106","subject":"한사","times":["월7","화1","목5"]},{"room":"308","subject":"탐","times":["화7"]},{"room":"107","subject":"한사","times":["수2","목3","금7"]}]},{"name":"김희재","classes":[{"room":"201","subject":"세사","times":["화1","목1","금1"]},{"room":"205","subject":"세사","times":["화2","목2","금3"]}]},{"name":"김은혜","classes":[{"room":"301","subject":"정법","times":["월1","수2","금2"]},{"room":"307","subject":"사문","times":["월4","화7","수1"]},{"room":"308","subject":"사문","times":["월5","화4","목5"]},{"room":"302","subject":"탐","times":["월7"]},{"room":"301","subject":"사문","times":["화6","수4","목6"]},{"room":"305","subject":"탐","times":["목1"]}]},{"name":"남인옥","classes":[{"room":"302","subject":"사문","times":["월1","수2","금2"]},{"room":"205","subject":"사화","times":["월5","목6","금4"]},{"room":"201","subject":"사화","times":["월6","화6","목7"]},{"room":"204","subject":"사화","times":["화2","목2","금3"]},{"room":"301","subject":"탐","times":["화4"]},{"room":"303","subject":"사문","times":["수3","목1","금7"]}]},{"name":"박석빈","classes":[{"room":"303","subject":"환경","times":["금3","금4"]}]},{"name":"김나리","classes":[{"room":"304","subject":"탐","times":["월1","금2"]},{"room":"101","subject":"사","times":["월3"]},{"room":"107","subject":"사","times":["월5"]},{"room":"103","subject":"사","times":["월6"]},{"room":"105","subject":"사","times":["화4"]},{"room":"303","subject":"탐","times":["화6","수4"]},{"room":"108","subject":"사","times":["목2"]},{"room":"106","subject":"사","times":["목6"]},{"room":"102","subject":"사","times":["목7"]},{"room":"104","subject":"사","times":["금6"]}]},{"name":"표명래","classes":[{"room":"310","subject":"세시","times":["월1","수2","금2"]},{"room":"306","subject":"여지","times":["월3","화5"]},{"room":"204","subject":"세시","times":["월5","목6","금4"]},{"room":"207","subject":"세시","times":["월6","화6","목7"]},{"room":"202","subject":"세시","times":["화1","목1","금1"]},{"room":"305","subject":"여지","times":["화2","금6"]}]},{"name":"나진정","classes":[{"room":"303","subject":"윤사","times":["월1","수2","금2"]},{"room":"304","subject":"윤사","times":["월7","화3","목2"]},{"room":"302","subject":"윤사","times":["화6","수4","목6"]},{"room":"301","subject":"윤사","times":["수3","목1","금7"]}]},{"name":"이현교","classes":[{"room":"308","subject":"탐","times":["월4","수1"]},{"room":"206","subject":"윤리","times":["월5","목6","금4"]},{"room":"202","subject":"윤리","times":["월6","화6","목7"]},{"room":"204","subject":"윤리","times":["화1","목1","금1"]},{"room":"203","subject":"윤리","times":["화2","목2","금3"]},{"room":"305","subject":"탐","times":["수3","금7"]}]},{"name":"손지혜","classes":[{"room":"103","subject":"사","times":["월1"]},{"room":"104","subject":"사","times":["월2"]},{"room":"301","subject":"탐","times":["월5","목5"]},{"room":"205","subject":"윤리","times":["월6","화6","목7"]},{"room":"302","subject":"탐","times":["화3","목2"]},{"room":"101","subject":"사","times":["화7"]},{"room":"106","subject":"사","times":["수1"]},{"room":"304","subject":"탐","times":["수2"]},{"room":"107","subject":"사","times":["수4"]},{"room":"108","subject":"사","times":["목1"]},{"room":"105","subject":"사","times":["금6"]},{"room":"102","subject":"사","times":["금7"]}]},{"name":"양세은","classes":[{"room":"102","subject":"사","times":["월2","수2"]},{"room":"106","subject":"사","times":["월3","목4"]},{"room":"104","subject":"사","times":["월5","화5"]},{"room":"107","subject":"사","times":["월7","금3"]},{"room":"103","subject":"사","times":["화2","금7"]},{"room":"108","subject":"사","times":["화3","목5"]},{"room":"105","subject":"사","times":["화6","목6"]},{"room":"101","subject":"사","times":["목1","금1"]}]},{"name":"황희찬","classes":[{"room":"301","subject":"생과","times":["월2","화1"]},{"room":"302","subject":"생과","times":["월3","목3"]},{"room":"207","subject":"물리","times":["월5","목6","금4"]},{"room":"102","subject":"과","times":["월7","수1"]},{"room":"206","subject":"물리","times":["화2","목2","금3"]},{"room":"303","subject":"생과","times":["화5","목7"]},{"room":"101","subject":"과","times":["화6","수4"]}]},{"name":"이동훈","classes":[{"room":"305","subject":"화","times":["월5","화4","목5"]},{"room":"204","subject":"화학","times":["월6","화6","목7"]},{"room":"203","subject":"화학","times":["화1","목1","금1"]},{"room":"207","subject":"화학","times":["화2","목2","금3"]}]},{"name":"천둥지","classes":[{"room":"307","subject":"생과","times":["월3","화5"]},{"room":"304","subject":"물","times":["월5","화4","목5"]},{"room":"308","subject":"생과","times":["화2","금6"]},{"room":"308","subject":"물","times":["화6","수4","목6"]},{"room":"304","subject":"생과","times":["목7","금1"]}]},{"name":"김건래","classes":[{"room":"306","subject":"생","times":["월1","수2","금2"]},{"room":"105","subject":"과","times":["월4","금4"]},{"room":"106","subject":"과","times":["월5","수4"]},{"room":"307","subject":"생","times":["월7","화3","목2"]},{"room":"107","subject":"과","times":["화5","금1"]},{"room":"108","subject":"과","times":["화7","목4"]},{"room":"304","subject":"생","times":["수3","목1","금7"]}]},{"name":"김예슬","classes":[{"room":"101","subject":"과","times":["월2","수2"]},{"room":"102","subject":"과","times":["월4","수3"]},{"room":"208","subject":"생명","times":["월5","목6","금4"]},{"room":"203","subject":"생명","times":["월6","화6","목7"]},{"room":"205","subject":"생명","times":["화1","목1","금1"]},{"room":"104","subject":"과","times":["화4","목3"]},{"room":"103","subject":"과","times":["화7","금2"]}]},{"name":"유소온","classes":[{"room":"107","subject":"과","times":["월1","화2"]},{"room":"103","subject":"과","times":["월2","금4"]},{"room":"108","subject":"과실","times":["월6"]},{"room":"104","subject":"과","times":["월7","목5"]},{"room":"108","subject":"과","times":["화5","수1"]},{"room":"106","subject":"과","times":["화6","목3"]},{"room":"306","subject":"화","times":["수3","목1","금7"]},{"room":"105","subject":"과","times":["목7","금2"]}]},{"name":"이하은","classes":[{"room":"309","subject":"지","times":["월1","수2","금2"]},{"room":"106","subject":"과실","times":["월4"]},{"room":"209","subject":"지학","times":["월6","화6","목7"]},{"room":"308","subject":"지","times":["월7","화3","목2"]},{"room":"105","subject":"과실","times":["화2"]},{"room":"102","subject":"과실","times":["화7"]},{"room":"101","subject":"과실","times":["수1"]},{"room":"104","subject":"과실","times":["수4"]},{"room":"107","subject":"과실","times":["목5"]},{"room":"103","subject":"과실","times":["금3"]}]},{"name":"홍성광","classes":[{"room":"308","subject":"스생","times":["월2"]},{"room":"303","subject":"스생","times":["월3"]},{"room":"101","subject":"체육","times":["월5","목5"]},{"room":"305","subject":"스생","times":["월6"]},{"room":"302","subject":"스생","times":["화1"]},{"room":"307","subject":"스생","times":["화2"]},{"room":"301","subject":"스생","times":["목7"]},{"room":"306","subject":"스생","times":["금1"]},{"room":"304","subject":"스생","times":["금6"]}]},{"name":"송정연","classes":[{"room":"203","subject":"운건","times":["월1","금6"]},{"room":"207","subject":"운건","times":["월3","목3"]},{"room":"206","subject":"운건","times":["월4","목4"]},{"room":"201","subject":"운건","times":["월7","화4"]},{"room":"208","subject":"운건","times":["화3","수3"]},{"room":"205","subject":"운건","times":["화5","금2"]},{"room":"202","subject":"운건","times":["수1","목5"]},{"room":"204","subject":"운건","times":["수4","금7"]}]},{"name":"임정호","classes":[{"room":"104","subject":"체육","times":["월1","목1"]},{"room":"105","subject":"체육","times":["월2","수1"]},{"room":"102","subject":"체육","times":["월3","금3"]},{"room":"103","subject":"체육","times":["화1","목4"]},{"room":"108","subject":"체육","times":["화2","금1"]},{"room":"106","subject":"체육","times":["화4","수2"]},{"room":"107","subject":"체육","times":["수3","목2"]}]},{"name":"서은영","classes":[{"room":"306","subject":"음비","times":["월2"]},{"room":"304","subject":"음비","times":["월3"]},{"room":"105","subject":"음","times":["월5","금7"]},{"room":"303","subject":"음비","times":["월6"]},{"room":"307","subject":"음비","times":["화1"]},{"room":"107","subject":"음","times":["화3","목6"]},{"room":"301","subject":"음비","times":["화5"]},{"room":"106","subject":"음","times":["화7","목1"]},{"room":"108","subject":"음","times":["수4","금4"]},{"room":"305","subject":"음비","times":["목3"]},{"room":"308","subject":"음비","times":["목4"]},{"room":"302","subject":"음비","times":["금1"]}]},{"name":"민에셀","classes":[{"room":"102","subject":"음","times":["월1","화6","금2"]},{"room":"108","subject":"음","times":["월3"]},{"room":"107","subject":"음","times":["월4"]},{"room":"103","subject":"음","times":["월7","수2","목7"]},{"room":"104","subject":"음","times":["화2","수1","금3"]},{"room":"101","subject":"음","times":["화5","목4","금6"]},{"room":"105","subject":"음","times":["목1"]},{"room":"106","subject":"음","times":["금7"]}]},{"name":"박태정","classes":[{"room":"201","subject":"미술","times":["월1","금6"]},{"room":"206","subject":"미술","times":["월3","금7"]},{"room":"202","subject":"미술","times":["월4","금2"]},{"room":"205","subject":"미술","times":["월7","수3"]},{"room":"207","subject":"미술","times":["화3","목4"]},{"room":"208","subject":"미술","times":["화4","목5"]},{"room":"204","subject":"미술","times":["화5","수1"]},{"room":"203","subject":"미술","times":["화7","수4"]}]},{"name":"안은정","classes":[{"room":"205","subject":"진로","times":["월1"]},{"room":"204","subject":"진로","times":["월2"]},{"room":"201","subject":"진로","times":["월4"]},{"room":"104","subject":"진로","times":["화1"]},{"room":"105","subject":"진로","times":["화3"]},{"room":"203","subject":"진로","times":["화5"]},{"room":"207","subject":"진로","times":["화7"]},{"room":"208","subject":"진로","times":["수1"]},{"room":"206","subject":"진로","times":["수3"]},{"room":"103","subject":"진로","times":["목3"]},{"room":"202","subject":"진로","times":["목4"]},{"room":"102","subject":"진로","times":["목6"]},{"room":"101","subject":"진로","times":["목7"]},{"room":"106","subject":"진로","times":["금3"]},{"room":"107","subject":"진로","times":["금4"]},{"room":"108","subject":"진로","times":["금6"]}]},{"name":"김방원","classes":[{"room":"206","subject":"정보","times":["월1","화3","금6"]},{"room":"205","subject":"정보","times":["월2","화7","목5"]},{"room":"207","subject":"정보","times":["월4","수2","금7"]},{"room":"208","subject":"정보","times":["월7","수4","목3"]},{"room":"308","subject":"진로","times":["화1"]},{"room":"307","subject":"진로","times":["목4"]},{"room":"305","subject":"프로","times":["금3","금4"]}]},{"name":"윤세라","classes":[{"room":"201","subject":"일어","times":["월2","수2","금2"]},{"room":"202","subject":"일어","times":["월3","수3","금6"]},{"room":"302","subject":"진로","times":["월6"]},{"room":"304","subject":"진로","times":["화1"]},{"room":"204","subject":"일어","times":["화3","화4","목3"]},{"room":"305","subject":"진로","times":["화5"]},{"room":"303","subject":"진로","times":["목4"]},{"room":"306","subject":"진로","times":["목7"]},{"room":"309","subject":"일","times":["금3","금4"]}]},{"name":"곽미숙","classes":[{"room":"308","subject":"심리","times":["금3","금4"]}]},{"name":"김윤정","classes":[{"room":"304","subject":"보건","times":["금3","금4"]}]},{"name":"김창진","classes":[{"room":"202","subject":"자율","times":["월2"]},{"room":"208","subject":"자율","times":["월3"]},{"room":"205","subject":"자율","times":["월4"]},{"room":"203","subject":"자율","times":["월7"]},{"room":"101","subject":"자율","times":["화2"]},{"room":"107","subject":"자율","times":["화4"]},{"room":"207","subject":"자율","times":["화5"]},{"room":"206","subject":"자율","times":["화7"]},{"room":"108","subject":"자율","times":["수3"]},{"room":"105","subject":"자율","times":["수4"]},{"room":"102","subject":"자율","times":["목2"]},{"room":"204","subject":"자율","times":["목5"]},{"room":"106","subject":"자율","times":["목7"]},{"room":"103","subject":"자율","times":["금1"]},{"room":"104","subject":"자율","times":["금2"]},{"room":"201","subject":"자율","times":["금7"]}]},{"name":"손민정","classes":[{"room":"301","subject":"심리","times":["목3","금1"]},{"room":"302","subject":"심리","times":["목4","금6"]},{"room":"306","subject":"심리","times":["금3","금4"]}]},{"name":"박현영","classes":[{"room":"203","subject":"중어","times":["화3","화4","목3"]}]},{"name":"김성국","classes":[{"room":"206","subject":"사화","times":["화1","목1","금1"]},{"room":"202","subject":"사화","times":["화2","목2","금3"]}]}],"exportedAt":"2026-04-28T06:46:51.739Z"}</script><script data-role="__embedded_restore__">(function autoRestoreEmbedded() {
+    try {
+        var dataEl = document.getElementById('__embedded_attendance_data__');
+        if (!dataEl) return;
+        if (sessionStorage.getItem('__embedded_restored__')) return;
+        var raw = dataEl.textContent || '';
+        if (!raw.trim()) return;
+        var data = JSON.parse(raw);
 
+        // 저장 시점 포맷
+        var exportedAt = data.exportedAt || '';
+        var dateLabel = '';
+        if (exportedAt) {
+            try {
+                var d = new Date(exportedAt);
+                dateLabel = d.getFullYear() + '년 ' + (d.getMonth()+1) + '월 ' + d.getDate() + '일 '
+                          + d.getHours() + '시 ' + String(d.getMinutes()).padStart(2,'0') + '분';
+            } catch(e) { dateLabel = exportedAt; }
+        }
+
+        // 배너 삽입
+        var banner = document.createElement('div');
+        banner.id = '__restore_banner__';
+        banner.style.cssText = [
+            'position:fixed;top:0;left:0;right:0;z-index:99999;',
+            'background:#1e40af;color:#fff;',
+            'padding:14px 16px;',
+            'box-shadow:0 2px 12px rgba(0,0,0,0.25);',
+            'font-family:-apple-system,sans-serif;font-size:14px;',
+            'display:flex;flex-direction:column;gap:10px;'
+        ].join('');
+
+        var msg = document.createElement('div');
+        msg.style.cssText = 'font-weight:600;line-height:1.5;';
+        msg.textContent = '📂 저장된 출석부 데이터가 있습니다' + (dateLabel ? ' (' + dateLabel + ')' : '') + ' — 불러올까요?';
+        banner.appendChild(msg);
+
+        var btnRow = document.createElement('div');
+        btnRow.style.cssText = 'display:flex;gap:8px;';
+
+        var btnOk = document.createElement('button');
+        btnOk.textContent = '✅ 불러오기';
+        btnOk.style.cssText = [
+            'flex:1;padding:10px;border:none;border-radius:8px;',
+            'background:#fff;color:#1e40af;font-weight:700;font-size:14px;cursor:pointer;'
+        ].join('');
+
+        var btnNo = document.createElement('button');
+        btnNo.textContent = '건너뛰기';
+        btnNo.style.cssText = [
+            'flex:1;padding:10px;border:1.5px solid rgba(255,255,255,0.5);border-radius:8px;',
+            'background:transparent;color:#fff;font-weight:600;font-size:14px;cursor:pointer;'
+        ].join('');
+
+        btnRow.appendChild(btnOk);
+        btnRow.appendChild(btnNo);
+        banner.appendChild(btnRow);
+
+        function dismissBanner() {
+            if (banner.parentNode) banner.parentNode.removeChild(banner);
+            document.body.style.paddingTop = '';
+        }
+
+        btnOk.addEventListener('click', function() {
+            if (data.db) localStorage.setItem('teacher_db_v02', JSON.stringify(data.db));
+            if (data.taskChecks) localStorage.setItem('teacher_tasks_v02', JSON.stringify(data.taskChecks));
+            if (data.attRecord) localStorage.setItem('teacher_att_v02', JSON.stringify(data.attRecord));
+            if (data.phoneBook) localStorage.setItem('teacher_phones_v02', JSON.stringify(data.phoneBook));
+            if (data.homeroomStudents) localStorage.setItem('teacher_homeroom_students', JSON.stringify(data.homeroomStudents));
+            if (data.xlsxTimetable) localStorage.setItem('teacher_xlsx_timetable_v02', JSON.stringify(data.xlsxTimetable));
+            sessionStorage.setItem('__embedded_restored__', '1');
+            dismissBanner();
+            location.reload();
+        });
+
+        btnNo.addEventListener('click', function() {
+            sessionStorage.setItem('__embedded_restored__', '1');
+            dismissBanner();
+        });
+
+        function insertBanner() {
+            document.body.insertBefore(banner, document.body.firstChild);
+            document.body.style.paddingTop = (banner.offsetHeight + 8) + 'px';
+        }
+        if (document.body) {
+            insertBanner();
+        } else {
+            document.addEventListener('DOMContentLoaded', insertBanner);
+        }
+
+    } catch(e) { console.error('Embedded restore failed:', e); }
+})();</script>
 
 <!-- ══════════════════════════════════════════════
      PWA 초기화 스크립트 (v0.8)
@@ -2724,96 +3886,4 @@ self.addEventListener('fetch', e => {
 })();
 </script>
 
-<script id="__embedded_attendance_data__" type="application/json">{"db":[],"taskChecks":{},"attRecord":{},"phoneBook":{},"homeroomStudents":[],"xlsxTimetable":[{"name":"류성일","classes":[{"room":"108","subject":"국","times":["월1","금7"]},{"room":"107","subject":"국","times":["월3","화6"]},{"room":"102","subject":"국","times":["월5","목5"]},{"room":"105","subject":"국","times":["월6","금3"]},{"room":"101","subject":"국","times":["화1","목3"]},{"room":"106","subject":"국","times":["화3","금6"]},{"room":"103","subject":"국","times":["화4","목1"]},{"room":"104","subject":"국","times":["수2","목6"]}]},{"name":"김지혜","classes":[{"room":"106","subject":"국","times":["월2","수3"]},{"room":"101","subject":"국","times":["월4","목6"]},{"room":"104","subject":"국","times":["월6","금1"]},{"room":"105","subject":"국","times":["월7","목5"]},{"room":"108","subject":"국","times":["화1","목3"]},{"room":"103","subject":"국","times":["화3","목2"]},{"room":"102","subject":"국","times":["화4","금4"]},{"room":"107","subject":"국","times":["화7","금2"]}]},{"name":"유영순","classes":[{"room":"208","subject":"문","times":["월1","목4"]},{"room":"207","subject":"문","times":["월2","목5"]},{"room":"204","subject":"문","times":["월4","금6"]},{"room":"202","subject":"문","times":["월7","화4"]},{"room":"206","subject":"문","times":["화5","수4"]},{"room":"201","subject":"문","times":["화7","목3"]},{"room":"205","subject":"문","times":["수1","금7"]},{"room":"203","subject":"문","times":["수2","금2"]}]},{"name":"장혜원","classes":[{"room":"203","subject":"문","times":["월2"]},{"room":"204","subject":"문","times":["월3"]},{"room":"201","subject":"주독","times":["월5","목6","금4"]},{"room":"206","subject":"주독","times":["월6","화6","목7"]},{"room":"207","subject":"주독","times":["화1","목1","금1"]},{"room":"208","subject":"주독","times":["화2","목2","금3"]},{"room":"202","subject":"문","times":["화5"]},{"room":"201","subject":"문","times":["수3"]}]},{"name":"전소정","classes":[{"room":"304","subject":"독","times":["월2"]},{"room":"301","subject":"화작","times":["월4","화7","수1"]},{"room":"302","subject":"화작","times":["월5","화4","목5"]},{"room":"303","subject":"화작","times":["월7","화3","목2"]},{"room":"304","subject":"화작","times":["화6","수4","목6"]},{"room":"303","subject":"독","times":["목3"]},{"room":"307","subject":"교육","times":["금3","금4"]}]},{"name":"배상준","classes":[{"room":"308","subject":"언매","times":["월1","수2","금2"]},{"room":"305","subject":"언매","times":["월4","화7","수1"]},{"room":"306","subject":"언매","times":["월5","화4","목5"]},{"room":"307","subject":"언매","times":["화6","수4","목6"]}]},{"name":"장수진","classes":[{"room":"307","subject":"독","times":["월2","목7","금6"]},{"room":"305","subject":"독","times":["월3"]},{"room":"306","subject":"독","times":["월6","화2","목4"]},{"room":"206","subject":"문","times":["월7"]},{"room":"205","subject":"문","times":["화3"]},{"room":"308","subject":"독","times":["화5","목3","금1"]},{"room":"208","subject":"문","times":["화7"]},{"room":"207","subject":"문","times":["수3"]},{"room":"302","subject":"독","times":["금3"]},{"room":"301","subject":"독","times":["금4"]}]},{"name":"이정선","classes":[{"room":"303","subject":"독","times":["월2","화1"]},{"room":"301","subject":"독","times":["월3","금6"]},{"room":"302","subject":"독","times":["화2","금4"]},{"room":"304","subject":"독","times":["화5","목3"]},{"room":"302","subject":"고전","times":["수3","목1","금7"]},{"room":"305","subject":"독","times":["목4","금1"]}]},{"name":"노현경","classes":[{"room":"101","subject":"공수","times":["월1","화4","목2","금4"]},{"room":"105","subject":"공수","times":["월3","화7","수3","목4"]},{"room":"103","subject":"공수","times":["월4","화5","수1","목6"]},{"room":"107","subject":"공수","times":["월6","화1","목7","금6"]}]},{"name":"송신영","classes":[{"room":"106","subject":"공수","times":["월1","화2","목2","금4"]},{"room":"104","subject":"공수","times":["월3","화3","수3","목7"]},{"room":"108","subject":"공수","times":["월5","화6","수2","목6"]},{"room":"102","subject":"공수","times":["월6","화5","목4","금1"]}]},{"name":"김은영","classes":[{"room":"206","subject":"대수","times":["월2","수2","목3","금2"]},{"room":"205","subject":"대수","times":["월3","화4","수4","금6"]},{"room":"203","subject":"대수","times":["월4","수1","목5","금7"]},{"room":"204","subject":"대수","times":["월7","화7","수3","목4"]}]},{"name":"이화익","classes":[{"room":"305","subject":"미적","times":["월1","수2","금2"]},{"room":"308","subject":"자율","times":["월6"]},{"room":"306","subject":"미적","times":["월7","화3","목2"]},{"room":"305","subject":"자율","times":["화1"]},{"room":"304","subject":"자율","times":["화2"]},{"room":"309","subject":"경수","times":["화6","수4","목6"]},{"room":"306","subject":"자율","times":["목3"]},{"room":"302","subject":"자율","times":["목7"]},{"room":"303","subject":"자율","times":["금6"]}]},{"name":"박성진","classes":[{"room":"307","subject":"확통","times":["월1","수2","금2"]},{"room":"302","subject":"확통","times":["월4","화7","수1"]},{"room":"303","subject":"확통","times":["월5","화4","목5"]},{"room":"305","subject":"확통","times":["화6","수4","목6"]},{"room":"308","subject":"확통","times":["수3","목1","금7"]},{"room":"307","subject":"자율","times":["목3"]}]},{"name":"김인경","classes":[{"room":"202","subject":"대수","times":["월1","화3","수2","금7"]},{"room":"201","subject":"대수","times":["월3","화5","수1","목4"]},{"room":"202","subject":"기하","times":["월5","목6","금4"]},{"room":"301","subject":"진로","times":["월6"]},{"room":"201","subject":"기하","times":["화2","목2","금3"]}]},{"name":"채민석","classes":[{"room":"207","subject":"대수","times":["월1","화4","수4","금2"]},{"room":"208","subject":"대수","times":["월2","화5","수2","금6"]},{"room":"306","subject":"확통","times":["월4","화7","수1"]},{"room":"301","subject":"확통","times":["월7","화3","목2"]},{"room":"301","subject":"자율","times":["목4"]}]},{"name":"이광근","classes":[{"room":"302","subject":"영독","times":["월2","화5"]},{"room":"308","subject":"영독","times":["월3","목7"]},{"room":"307","subject":"영독","times":["월6","금1"]},{"room":"306","subject":"영독","times":["화1","금6"]},{"room":"301","subject":"영독","times":["화2","금3"]}]},{"name":"김도희","classes":[{"room":"305","subject":"영독","times":["월2","목7"]},{"room":"304","subject":"진영","times":["월4","화7","수1"]},{"room":"304","subject":"영독","times":["월6","목4"]},{"room":"303","subject":"영독","times":["화2","금1"]},{"room":"306","subject":"영문","times":["화6","수4","목6"]},{"room":"307","subject":"영문","times":["수3","목1","금7"]}]},{"name":"박혜경","classes":[{"room":"204","subject":"영","times":["월1","금2"]},{"room":"203","subject":"영","times":["월3","목4"]},{"room":"208","subject":"영","times":["월4","금7"]},{"room":"207","subject":"영","times":["월7","금6"]},{"room":"201","subject":"영","times":["화3","목5"]},{"room":"206","subject":"영","times":["화4","수1"]},{"room":"202","subject":"영","times":["화7","수4"]},{"room":"205","subject":"영","times":["수2","목3"]}]},{"name":"문매리","classes":[{"room":"107","subject":"공","times":["월2","목4"]},{"room":"104","subject":"공","times":["월4","금7"]},{"room":"103","subject":"공","times":["월5","화6"]},{"room":"108","subject":"공","times":["월7","목7"]},{"room":"105","subject":"공","times":["화1","목3"]},{"room":"102","subject":"공","times":["화3","목1"]},{"room":"106","subject":"공","times":["화5","금2"]},{"room":"101","subject":"공","times":["수3","금3"]}]},{"name":"김한영","classes":[{"room":"207","subject":"영","times":["수1"]},{"room":"204","subject":"영","times":["수2"]},{"room":"203","subject":"영","times":["수3"]},{"room":"201","subject":"영","times":["수4"]},{"room":"202","subject":"영","times":["목3"]},{"room":"205","subject":"영","times":["목4"]},{"room":"206","subject":"영","times":["목5"]},{"room":"208","subject":"영","times":["금2"]}]},{"name":"김은지","classes":[{"room":"108","subject":"공","times":["월4","금3"]},{"room":"106","subject":"공","times":["월6","금1"]},{"room":"101","subject":"공","times":["월7","금7"]},{"room":"102","subject":"공","times":["화2","금6"]},{"room":"105","subject":"공","times":["화5","수2"]},{"room":"104","subject":"공","times":["화6","목4"]},{"room":"107","subject":"공","times":["수1","목1"]},{"room":"103","subject":"공","times":["수4","목5"]}]},{"name":"송준영","classes":[{"room":"303","subject":"영문","times":["월4","화7","수1"]},{"room":"203","subject":"영토","times":["월5","목6","금4"]},{"room":"305","subject":"영문","times":["월7","화3","목2"]},{"room":"208","subject":"영토","times":["화1","목1","금1"]}]},{"name":"박상준","classes":[{"room":"103","subject":"한사","times":["월3","수3","금6"]},{"room":"307","subject":"동사","times":["월5","화4","목5"]},{"room":"101","subject":"한사","times":["월6","화3","금2"]},{"room":"102","subject":"한사","times":["화1","수4","목3"]},{"room":"104","subject":"한사","times":["화7","목2","금4"]},{"room":"303","subject":"탐","times":["목6"]}]},{"name":"이하영","classes":[{"room":"105","subject":"한사","times":["월1","목2","금1"]},{"room":"108","subject":"한사","times":["월2","화4","금2"]},{"room":"208","subject":"세사","times":["월6","화6","목7"]},{"room":"106","subject":"한사","times":["월7","화1","목5"]},{"room":"308","subject":"탐","times":["화7"]},{"room":"107","subject":"한사","times":["수2","목3","금7"]}]},{"name":"김희재","classes":[{"room":"201","subject":"세사","times":["화1","목1","금1"]},{"room":"205","subject":"세사","times":["화2","목2","금3"]}]},{"name":"김은혜","classes":[{"room":"301","subject":"정법","times":["월1","수2","금2"]},{"room":"307","subject":"사문","times":["월4","화7","수1"]},{"room":"308","subject":"사문","times":["월5","화4","목5"]},{"room":"302","subject":"탐","times":["월7"]},{"room":"301","subject":"사문","times":["화6","수4","목6"]},{"room":"305","subject":"탐","times":["목1"]}]},{"name":"남인옥","classes":[{"room":"302","subject":"사문","times":["월1","수2","금2"]},{"room":"205","subject":"사화","times":["월5","목6","금4"]},{"room":"201","subject":"사화","times":["월6","화6","목7"]},{"room":"204","subject":"사화","times":["화2","목2","금3"]},{"room":"301","subject":"탐","times":["화4"]},{"room":"303","subject":"사문","times":["수3","목1","금7"]}]},{"name":"박석빈","classes":[{"room":"303","subject":"환경","times":["금3","금4"]}]},{"name":"김나리","classes":[{"room":"304","subject":"탐","times":["월1","금2"]},{"room":"101","subject":"사","times":["월3"]},{"room":"107","subject":"사","times":["월5"]},{"room":"103","subject":"사","times":["월6"]},{"room":"105","subject":"사","times":["화4"]},{"room":"303","subject":"탐","times":["화6","수4"]},{"room":"108","subject":"사","times":["목2"]},{"room":"106","subject":"사","times":["목6"]},{"room":"102","subject":"사","times":["목7"]},{"room":"104","subject":"사","times":["금6"]}]},{"name":"표명래","classes":[{"room":"310","subject":"세시","times":["월1","수2","금2"]},{"room":"306","subject":"여지","times":["월3","화5"]},{"room":"204","subject":"세시","times":["월5","목6","금4"]},{"room":"207","subject":"세시","times":["월6","화6","목7"]},{"room":"202","subject":"세시","times":["화1","목1","금1"]},{"room":"305","subject":"여지","times":["화2","금6"]}]},{"name":"나진정","classes":[{"room":"303","subject":"윤사","times":["월1","수2","금2"]},{"room":"304","subject":"윤사","times":["월7","화3","목2"]},{"room":"302","subject":"윤사","times":["화6","수4","목6"]},{"room":"301","subject":"윤사","times":["수3","목1","금7"]}]},{"name":"이현교","classes":[{"room":"308","subject":"탐","times":["월4","수1"]},{"room":"206","subject":"윤리","times":["월5","목6","금4"]},{"room":"202","subject":"윤리","times":["월6","화6","목7"]},{"room":"204","subject":"윤리","times":["화1","목1","금1"]},{"room":"203","subject":"윤리","times":["화2","목2","금3"]},{"room":"305","subject":"탐","times":["수3","금7"]}]},{"name":"손지혜","classes":[{"room":"103","subject":"사","times":["월1"]},{"room":"104","subject":"사","times":["월2"]},{"room":"301","subject":"탐","times":["월5","목5"]},{"room":"205","subject":"윤리","times":["월6","화6","목7"]},{"room":"302","subject":"탐","times":["화3","목2"]},{"room":"101","subject":"사","times":["화7"]},{"room":"106","subject":"사","times":["수1"]},{"room":"304","subject":"탐","times":["수2"]},{"room":"107","subject":"사","times":["수4"]},{"room":"108","subject":"사","times":["목1"]},{"room":"105","subject":"사","times":["금6"]},{"room":"102","subject":"사","times":["금7"]}]},{"name":"양세은","classes":[{"room":"102","subject":"사","times":["월2","수2"]},{"room":"106","subject":"사","times":["월3","목4"]},{"room":"104","subject":"사","times":["월5","화5"]},{"room":"107","subject":"사","times":["월7","금3"]},{"room":"103","subject":"사","times":["화2","금7"]},{"room":"108","subject":"사","times":["화3","목5"]},{"room":"105","subject":"사","times":["화6","목6"]},{"room":"101","subject":"사","times":["목1","금1"]}]},{"name":"황희찬","classes":[{"room":"301","subject":"생과","times":["월2","화1"]},{"room":"302","subject":"생과","times":["월3","목3"]},{"room":"207","subject":"물리","times":["월5","목6","금4"]},{"room":"102","subject":"과","times":["월7","수1"]},{"room":"206","subject":"물리","times":["화2","목2","금3"]},{"room":"303","subject":"생과","times":["화5","목7"]},{"room":"101","subject":"과","times":["화6","수4"]}]},{"name":"이동훈","classes":[{"room":"305","subject":"화","times":["월5","화4","목5"]},{"room":"204","subject":"화학","times":["월6","화6","목7"]},{"room":"203","subject":"화학","times":["화1","목1","금1"]},{"room":"207","subject":"화학","times":["화2","목2","금3"]}]},{"name":"천둥지","classes":[{"room":"307","subject":"생과","times":["월3","화5"]},{"room":"304","subject":"물","times":["월5","화4","목5"]},{"room":"308","subject":"생과","times":["화2","금6"]},{"room":"308","subject":"물","times":["화6","수4","목6"]},{"room":"304","subject":"생과","times":["목7","금1"]}]},{"name":"김건래","classes":[{"room":"306","subject":"생","times":["월1","수2","금2"]},{"room":"105","subject":"과","times":["월4","금4"]},{"room":"106","subject":"과","times":["월5","수4"]},{"room":"307","subject":"생","times":["월7","화3","목2"]},{"room":"107","subject":"과","times":["화5","금1"]},{"room":"108","subject":"과","times":["화7","목4"]},{"room":"304","subject":"생","times":["수3","목1","금7"]}]},{"name":"김예슬","classes":[{"room":"101","subject":"과","times":["월2","수2"]},{"room":"102","subject":"과","times":["월4","수3"]},{"room":"208","subject":"생명","times":["월5","목6","금4"]},{"room":"203","subject":"생명","times":["월6","화6","목7"]},{"room":"205","subject":"생명","times":["화1","목1","금1"]},{"room":"104","subject":"과","times":["화4","목3"]},{"room":"103","subject":"과","times":["화7","금2"]}]},{"name":"유소온","classes":[{"room":"107","subject":"과","times":["월1","화2"]},{"room":"103","subject":"과","times":["월2","금4"]},{"room":"108","subject":"과실","times":["월6"]},{"room":"104","subject":"과","times":["월7","목5"]},{"room":"108","subject":"과","times":["화5","수1"]},{"room":"106","subject":"과","times":["화6","목3"]},{"room":"306","subject":"화","times":["수3","목1","금7"]},{"room":"105","subject":"과","times":["목7","금2"]}]},{"name":"이하은","classes":[{"room":"309","subject":"지","times":["월1","수2","금2"]},{"room":"106","subject":"과실","times":["월4"]},{"room":"209","subject":"지학","times":["월6","화6","목7"]},{"room":"308","subject":"지","times":["월7","화3","목2"]},{"room":"105","subject":"과실","times":["화2"]},{"room":"102","subject":"과실","times":["화7"]},{"room":"101","subject":"과실","times":["수1"]},{"room":"104","subject":"과실","times":["수4"]},{"room":"107","subject":"과실","times":["목5"]},{"room":"103","subject":"과실","times":["금3"]}]},{"name":"홍성광","classes":[{"room":"308","subject":"스생","times":["월2"]},{"room":"303","subject":"스생","times":["월3"]},{"room":"101","subject":"체육","times":["월5","목5"]},{"room":"305","subject":"스생","times":["월6"]},{"room":"302","subject":"스생","times":["화1"]},{"room":"307","subject":"스생","times":["화2"]},{"room":"301","subject":"스생","times":["목7"]},{"room":"306","subject":"스생","times":["금1"]},{"room":"304","subject":"스생","times":["금6"]}]},{"name":"송정연","classes":[{"room":"203","subject":"운건","times":["월1","금6"]},{"room":"207","subject":"운건","times":["월3","목3"]},{"room":"206","subject":"운건","times":["월4","목4"]},{"room":"201","subject":"운건","times":["월7","화4"]},{"room":"208","subject":"운건","times":["화3","수3"]},{"room":"205","subject":"운건","times":["화5","금2"]},{"room":"202","subject":"운건","times":["수1","목5"]},{"room":"204","subject":"운건","times":["수4","금7"]}]},{"name":"임정호","classes":[{"room":"104","subject":"체육","times":["월1","목1"]},{"room":"105","subject":"체육","times":["월2","수1"]},{"room":"102","subject":"체육","times":["월3","금3"]},{"room":"103","subject":"체육","times":["화1","목4"]},{"room":"108","subject":"체육","times":["화2","금1"]},{"room":"106","subject":"체육","times":["화4","수2"]},{"room":"107","subject":"체육","times":["수3","목2"]}]},{"name":"서은영","classes":[{"room":"306","subject":"음비","times":["월2"]},{"room":"304","subject":"음비","times":["월3"]},{"room":"105","subject":"음","times":["월5","금7"]},{"room":"303","subject":"음비","times":["월6"]},{"room":"307","subject":"음비","times":["화1"]},{"room":"107","subject":"음","times":["화3","목6"]},{"room":"301","subject":"음비","times":["화5"]},{"room":"106","subject":"음","times":["화7","목1"]},{"room":"108","subject":"음","times":["수4","금4"]},{"room":"305","subject":"음비","times":["목3"]},{"room":"308","subject":"음비","times":["목4"]},{"room":"302","subject":"음비","times":["금1"]}]},{"name":"민에셀","classes":[{"room":"102","subject":"음","times":["월1","화6","금2"]},{"room":"108","subject":"음","times":["월3"]},{"room":"107","subject":"음","times":["월4"]},{"room":"103","subject":"음","times":["월7","수2","목7"]},{"room":"104","subject":"음","times":["화2","수1","금3"]},{"room":"101","subject":"음","times":["화5","목4","금6"]},{"room":"105","subject":"음","times":["목1"]},{"room":"106","subject":"음","times":["금7"]}]},{"name":"박태정","classes":[{"room":"201","subject":"미술","times":["월1","금6"]},{"room":"206","subject":"미술","times":["월3","금7"]},{"room":"202","subject":"미술","times":["월4","금2"]},{"room":"205","subject":"미술","times":["월7","수3"]},{"room":"207","subject":"미술","times":["화3","목4"]},{"room":"208","subject":"미술","times":["화4","목5"]},{"room":"204","subject":"미술","times":["화5","수1"]},{"room":"203","subject":"미술","times":["화7","수4"]}]},{"name":"안은정","classes":[{"room":"205","subject":"진로","times":["월1"]},{"room":"204","subject":"진로","times":["월2"]},{"room":"201","subject":"진로","times":["월4"]},{"room":"104","subject":"진로","times":["화1"]},{"room":"105","subject":"진로","times":["화3"]},{"room":"203","subject":"진로","times":["화5"]},{"room":"207","subject":"진로","times":["화7"]},{"room":"208","subject":"진로","times":["수1"]},{"room":"206","subject":"진로","times":["수3"]},{"room":"103","subject":"진로","times":["목3"]},{"room":"202","subject":"진로","times":["목4"]},{"room":"102","subject":"진로","times":["목6"]},{"room":"101","subject":"진로","times":["목7"]},{"room":"106","subject":"진로","times":["금3"]},{"room":"107","subject":"진로","times":["금4"]},{"room":"108","subject":"진로","times":["금6"]}]},{"name":"김방원","classes":[{"room":"206","subject":"정보","times":["월1","화3","금6"]},{"room":"205","subject":"정보","times":["월2","화7","목5"]},{"room":"207","subject":"정보","times":["월4","수2","금7"]},{"room":"208","subject":"정보","times":["월7","수4","목3"]},{"room":"308","subject":"진로","times":["화1"]},{"room":"307","subject":"진로","times":["목4"]},{"room":"305","subject":"프로","times":["금3","금4"]}]},{"name":"윤세라","classes":[{"room":"201","subject":"일어","times":["월2","수2","금2"]},{"room":"202","subject":"일어","times":["월3","수3","금6"]},{"room":"302","subject":"진로","times":["월6"]},{"room":"304","subject":"진로","times":["화1"]},{"room":"204","subject":"일어","times":["화3","화4","목3"]},{"room":"305","subject":"진로","times":["화5"]},{"room":"303","subject":"진로","times":["목4"]},{"room":"306","subject":"진로","times":["목7"]},{"room":"309","subject":"일","times":["금3","금4"]}]},{"name":"곽미숙","classes":[{"room":"308","subject":"심리","times":["금3","금4"]}]},{"name":"김윤정","classes":[{"room":"304","subject":"보건","times":["금3","금4"]}]},{"name":"김창진","classes":[{"room":"202","subject":"자율","times":["월2"]},{"room":"208","subject":"자율","times":["월3"]},{"room":"205","subject":"자율","times":["월4"]},{"room":"203","subject":"자율","times":["월7"]},{"room":"101","subject":"자율","times":["화2"]},{"room":"107","subject":"자율","times":["화4"]},{"room":"207","subject":"자율","times":["화5"]},{"room":"206","subject":"자율","times":["화7"]},{"room":"108","subject":"자율","times":["수3"]},{"room":"105","subject":"자율","times":["수4"]},{"room":"102","subject":"자율","times":["목2"]},{"room":"204","subject":"자율","times":["목5"]},{"room":"106","subject":"자율","times":["목7"]},{"room":"103","subject":"자율","times":["금1"]},{"room":"104","subject":"자율","times":["금2"]},{"room":"201","subject":"자율","times":["금7"]}]},{"name":"손민정","classes":[{"room":"301","subject":"심리","times":["목3","금1"]},{"room":"302","subject":"심리","times":["목4","금6"]},{"room":"306","subject":"심리","times":["금3","금4"]}]},{"name":"박현영","classes":[{"room":"203","subject":"중어","times":["화3","화4","목3"]}]},{"name":"김성국","classes":[{"room":"206","subject":"사화","times":["화1","목1","금1"]},{"room":"202","subject":"사화","times":["화2","목2","금3"]}]}],"exportedAt":"2026-04-28T23:32:56.817Z"}</script><script data-role="__embedded_restore__">(function autoRestoreEmbedded() {
-    try {
-        var dataEl = document.getElementById('__embedded_attendance_data__');
-        if (!dataEl) return;
-        if (sessionStorage.getItem('__embedded_restored__')) return;
-        var raw = dataEl.textContent || '';
-        if (!raw.trim()) return;
-        var data = JSON.parse(raw);
-
-        // 저장 시점 포맷
-        var exportedAt = data.exportedAt || '';
-        var dateLabel = '';
-        if (exportedAt) {
-            try {
-                var d = new Date(exportedAt);
-                dateLabel = d.getFullYear() + '년 ' + (d.getMonth()+1) + '월 ' + d.getDate() + '일 '
-                          + d.getHours() + '시 ' + String(d.getMinutes()).padStart(2,'0') + '분';
-            } catch(e) { dateLabel = exportedAt; }
-        }
-
-        // 배너 삽입
-        var banner = document.createElement('div');
-        banner.id = '__restore_banner__';
-        banner.style.cssText = [
-            'position:fixed;top:0;left:0;right:0;z-index:99999;',
-            'background:#1e40af;color:#fff;',
-            'padding:14px 16px;',
-            'box-shadow:0 2px 12px rgba(0,0,0,0.25);',
-            'font-family:-apple-system,sans-serif;font-size:14px;',
-            'display:flex;flex-direction:column;gap:10px;'
-        ].join('');
-
-        var msg = document.createElement('div');
-        msg.style.cssText = 'font-weight:600;line-height:1.5;';
-        msg.textContent = '📂 저장된 출석부 데이터가 있습니다' + (dateLabel ? ' (' + dateLabel + ')' : '') + ' — 불러올까요?';
-        banner.appendChild(msg);
-
-        var btnRow = document.createElement('div');
-        btnRow.style.cssText = 'display:flex;gap:8px;';
-
-        var btnOk = document.createElement('button');
-        btnOk.textContent = '✅ 불러오기';
-        btnOk.style.cssText = [
-            'flex:1;padding:10px;border:none;border-radius:8px;',
-            'background:#fff;color:#1e40af;font-weight:700;font-size:14px;cursor:pointer;'
-        ].join('');
-
-        var btnNo = document.createElement('button');
-        btnNo.textContent = '건너뛰기';
-        btnNo.style.cssText = [
-            'flex:1;padding:10px;border:1.5px solid rgba(255,255,255,0.5);border-radius:8px;',
-            'background:transparent;color:#fff;font-weight:600;font-size:14px;cursor:pointer;'
-        ].join('');
-
-        btnRow.appendChild(btnOk);
-        btnRow.appendChild(btnNo);
-        banner.appendChild(btnRow);
-
-        function dismissBanner() {
-            if (banner.parentNode) banner.parentNode.removeChild(banner);
-            document.body.style.paddingTop = '';
-        }
-
-        btnOk.addEventListener('click', function() {
-            if (data.db) localStorage.setItem('teacher_db_v02', JSON.stringify(data.db));
-            if (data.taskChecks) localStorage.setItem('teacher_tasks_v02', JSON.stringify(data.taskChecks));
-            if (data.attRecord) localStorage.setItem('teacher_att_v02', JSON.stringify(data.attRecord));
-            if (data.phoneBook) localStorage.setItem('teacher_phones_v02', JSON.stringify(data.phoneBook));
-            if (data.homeroomStudents) localStorage.setItem('teacher_homeroom_students', JSON.stringify(data.homeroomStudents));
-            if (data.xlsxTimetable) localStorage.setItem('teacher_xlsx_timetable_v02', JSON.stringify(data.xlsxTimetable));
-            sessionStorage.setItem('__embedded_restored__', '1');
-            dismissBanner();
-            location.reload();
-        });
-
-        btnNo.addEventListener('click', function() {
-            sessionStorage.setItem('__embedded_restored__', '1');
-            dismissBanner();
-        });
-
-        // body가 준비되면 배너 삽입, 아니면 DOMContentLoaded 대기
-        function insertBanner() {
-            document.body.insertBefore(banner, document.body.firstChild);
-            document.body.style.paddingTop = (banner.offsetHeight + 8) + 'px';
-        }
-        if (document.body) {
-            insertBanner();
-        } else {
-            document.addEventListener('DOMContentLoaded', insertBanner);
-        }
-
-    } catch(e) { console.error('Embedded restore failed:', e); }
-})();</script></body></html>
+</body></html>
